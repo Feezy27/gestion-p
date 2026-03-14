@@ -429,23 +429,15 @@ function rCfg(el,p){
   </div>
   <button class="bsave" onclick="saveCfg('${p.id}')">&#10003; Enregistrer les param\u00e8tres</button>
   <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--paper-3)">
-    <div style="font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin-bottom:.75rem">&#9729; Sauvegarde GitHub</div>
-    ${c.u&&c.r&&c.t?`<div class="ghbox">Connect\u00e9 \u00e0 <strong>${esc(c.u)}/${esc(c.r)}</strong> &mdash; sauvegarde automatique active</div>`:''}
+    <div style="font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin-bottom:.75rem">&#9729; Sauvegarde sécurisée</div>
+    ${c.u&&c.r&&c.t?`<div class="ghbox">✅ Sauvegarde active — vos données sont protégées</div>`:'<div class="notice">⚠️ Configurez la sauvegarde pour protéger vos données même si vous videz le cache.</div>'}
     <div class="fg c1" style="margin-bottom:.85rem">
-      <div class="fi"><label>Nom d'utilisateur GitHub</label><input type="text" id="gh-u" value="${esc(c.u||'')}" placeholder="votre-pseudo" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"></div>
-      <div class="fi"><label>Nom du d\u00e9p\u00f4t</label><input type="text" id="gh-r" value="${esc(c.r||'')}" placeholder="nom-du-depot" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"></div>
-      <div class="fi"><label>Token GitHub</label><input type="password" id="gh-t" value="${esc(c.t||'')}" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off"></div>
+      <div class="fi"><label>Votre pseudo GitHub</label><input type="text" id="gh-u" value="${esc(c.u||'')}" placeholder="votre-pseudo" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"><span class="hint">Le nom affiché sur votre profil github.com</span></div>
+      <div class="fi"><label>Nom de votre dépôt</label><input type="text" id="gh-r" value="${esc(c.r||'')}" placeholder="ex: gestion-loc" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false"><span class="hint">Le nom choisi lors de la création du dépôt</span></div>
+      <div class="fi"><label>Clé d'accès (token)</label><input type="password" id="gh-t" value="${esc(c.t||'')}" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off"><span class="hint">Créez-la sur github.com → photo → Settings → Developer settings → Tokens (classic)</span></div>
     </div>
-    <div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:.65rem">
-      <button class="btn bg" style="flex:1;justify-content:center" onclick="ghSave()">Enregistrer config GitHub</button>
-      <button class="btn bg" style="flex:1;justify-content:center" onclick="ghSync()">&#9729; Synchroniser</button>
-    </div>
-    <div style="display:flex;gap:.65rem;flex-wrap:wrap">
-      <button class="btn bg" style="flex:1;justify-content:center;font-size:.8rem" onclick="expData()">&#8595; Export JSON</button>
-      <button class="btn bg" style="flex:1;justify-content:center;font-size:.8rem" onclick="document.getElementById('imp-f').click()">&#8593; Import JSON</button>
-      <input type="file" id="imp-f" accept=".json" style="display:none" onchange="impData(event)">
-    </div>
-    <div class="hint" style="margin-top:.65rem">Sauvegarde automatique sur GitHub \u00e0 chaque enregistrement.</div>
+    <button class="bsave" style="background:var(--blue);box-shadow:0 3px 12px rgba(26,74,122,.22)" onclick="ghSave()">&#9729; Activer la sauvegarde automatique</button>
+    <div class="hint" style="margin-top:.85rem;line-height:1.6">Une fois activée, toutes vos données sont sauvegardées automatiquement sur GitHub à chaque modification. Si vous videz votre cache ou changez de téléphone, elles sont restaurées automatiquement.</div>
   </div>`;
   ['loyer','majoration','charges','eau','eclairage','chauffage','taxes_locatives','ordures','ascenseur','prestations'].forEach(k=>{
     document.getElementById('c_'+k)?.addEventListener('input',()=>{
@@ -634,10 +626,13 @@ function ghSave(){
   const u=(document.getElementById('gh-u')?.value||'').trim();
   const r=(document.getElementById('gh-r')?.value||'').trim();
   const t=(document.getElementById('gh-t')?.value||'').trim();
-  if(!u||!r||!t){toast('\u26a0 Remplissez les 3 champs GitHub');return;}
+  if(!u||!r||!t){toast('⚠ Remplissez les 3 champs ci-dessus');return;}
   localStorage.setItem('gh',JSON.stringify({u,r,t}));
-  toast('Configuration GitHub enregistr\u00e9e \u2713');
   render();
+  toast('Activation en cours…');
+  ghPush().then(ok=>{
+    toast(ok?'Sauvegarde activée ✓ Données sécurisées':'⚠ Erreur — vérifiez le pseudo, dépôt et clé');
+  });
 }
 async function ghPush(){
   const c=ghCfg();if(!c.u||!c.r||!c.t)return false;
