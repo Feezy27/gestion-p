@@ -7,211 +7,222 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Quittances">
 <title>Quittances de Loyer</title>
-<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAWBUlEQVR4nO3dubIlWXXH4XwQbJkYsnHkYbYjRzaTBLTEIAEtMYg34A2aoZmhoWkGUxF6g55n6AFLEXoGXXQVrYqqulUn18nca6+9vojPUYTi1smdZ/9/XTeg2T7x9AsANLSlfwIAUggAQFMCANCUAAA0JQAATQkAQFMCANCUAAA0JQAATQkAQFMCANCUAAA0JQAATQkAQFMCANCUAAA0JQAATW2ffPoFABoSAICmBACgqe2T330BgIYEAKApAQBoSgAAmhIAgKZuAvAiAA0JAEBTAgDQlAAANCUAAE0JAEBTAgDQlAAANCUAAE1tn/ruiwA0JAAATQkAQFMCANCUAAA0JQAATW2f+t6LADQkAABNCQBAUwIA0JQAADQlAABNCQBAUwIA0JQAADQlAABNCQBAU9unv/cSAA0JAEBTAgDQlAAANCUAAE0JAEBTAgDQlAAANCUAAE0JAEBT26e//xIADQkAQFMCANCUAAA0JQAATQkAQFMCANDU9pnvvwRAQwIA0JQAADQlAABNCQBAUwIA0JQAADQlAABN3QTgZQAaEgCApgQAoCkBAGhKAACa2j7zg5cBaEgAAJoSAICmBACgqe3vf/AyAA0JAEBTAgDQlAAANCUAtPb8r59J/wyQRQDo62b9//u/3tUA2hIAmrpd/1saQE8CQEf3rr8G0JYA0MuD0y8DtCUANPLo9dcAuhEAurhk/TWAVgSAFi5ffw2gDwFgcXunXwboQwBY2TXrrwEsTwBY1vXrrwGsTQBY01HrrwEsTABYzbHTLwMsbPuHZ16BZZy3/h82IP0Z4SgCwDrOXn8NYDECwArGTL8MsBgBoLzx668BrEEAqC1r/TWABQgAheWuvwZQnQBQ0gzTLwNUJwDUM9v6awBFCQDFzLn+GkBFAkAlM6+/BlCOAFDD/NMvA5QjABRQa/01gCoEgNlVXH8NoAQBYGp1118DmJ8AMKnq0y8DzE8AmNFK668BTEsAmM56668BzGn77DOvwCRWnf77MpB+znBLAJhFh/XXAKYiAEyhz/prAPPYPvvDVyBXt/X//wZknzzNCQCZek6/DDAJASCN9dcAcgkAOay/BpBOAEhg/TWAGdwE4FUYxvRfkIH810QTAsA41l8DmIoAMIj11wBmIwCMYP01gAkJAOcy/TLAtASAE1l/DWBmAsBZrL8GMDkB4HimXwYoQQA4mPXXAKrYPvfDV+Eo1n9AA9LfMssQAA5j/TWAWgSAA5h+GaAiAeBa1l8DKEoAuIr11wDqEgDirP8MNIAwASDC9M9GBgjYPvejV2EX6z+nvzQg+7tBLQLAPtZ/ZhrALgLADtZ/fhrA5QSAi5j+WmSASwgAj2f9K0p5a+nfVXYRAB7D+nO59K8ruwgAdzL97JX+pWUXAeDhrD8B6d9bdhEAHsL6E5P+1WUXAeB+1p+w9G8vu2yf/9FrcMv0c6X07zC7CAD/x/qv5z//4/nB0r/G7CIA/IX15xDp32R2EQCsP4dJ/zKziwC0Zvo5VvpXml0EoC/rz+HSv9XsIgBNWX/OkP7FZhcB6Mj6c5L07za7CEAvpp9TpX/D2UUAGrH+nC39S84u2+d//BodWH8GSP+es4sArM/0M0z6t51dBGBx1p+R0r/w7CIAK7P+DJb+nWcXAViW9We89K89uwjAgkw/WdK//OwiAKux/iRK//6zy/bkj19jGdafXOlXgF0EYB3Wn3Tpt4BdBGAFpp9JpN8FdhGA8qw/80i/DuwiALVZfx5h/P8mcPqNYBcBKMz6M5v0S8EuAlCS6WdO6VeDXQSgHuvPtNJvB7sIQDHWn5ndfD/T7wiXuwnA65Rg+qnifzOQf2V4LAGowfpTiwaUIAAFWH8q0oD5CcDsrD91acDkBGBepp81yMC0tid/8joTsv6s5C8NyL5TPEgAZmT9WY8GTEgApmP9WZUGzGb7x5+8ziRMPx3cfM/T7xq3BGAW1p8+NGASAjAF6083GjADAchn/elJA9IJQCbTDzKQSADSWH+4pQFZBCCH9Yd7aUAKARjN9DPM+P9N4Cs/sAwMJgBDWX94NA0YSQDGsf5wCQ0YRgAGsf5wOQ0YQwBOZ/ohRgbOJgDnsv5wDQ04lQCcyPrD9TTgPAJwFusPR9GAkwjA8Uw/nEEGDicAB7P+cB4NONb2Tz99g6NYfzjbzS1Lv+nLEIDDWH8YQwOOIgAHMP0wngxcTwCuZf0hiwZcSQCuYv0hlwZcQwCCDvmX307OM1JF+iAUJQBBHYbDM1JF+iAUJQBBHYbDM1JF+iAUJQBBHYbDM1JF+iAUJQBBHYbDM66hwzOmD0JRAhDU4VJ5xjV0eMb0QShKAII6XCrPuIYOz5g+CEUJQFCHS+UZ19DhGdMHoSgBCOpwqTzjGjo8Y/ogFCUAQR0ulWdcQ4dnTB+EogQgqMOl8oxr6PCM6YNQlAAEdbhUnnENHZ4xfRCK2r7w0zcI6HCpPOMaOjxj+iAUJQBBHS6VZ1xDh2dMH4SiBCCow6XyjGvo8Izpg1CUAAR1uFSecQ0dnjF9EIravvCzNwjocKk84xo6PGP6IBQlAEEdLpVnXEOHZ0wfhKIEIKjDpfKMa+jwjOmDUJQABHW4VJ5xDR2eMX0QihKAoKMu1Uc+/tGizrjG6Q/lNKY9DQE4w00A3iRAAEye0xh5Go8LQP4mVCQAQQJg8pzGyNMQgDMIQNDhAfjYk08c6N7beNJPPnXynIbTEIABBCDoNgDXq3vJjzoBp+E0rpc+CEUJQNBJl/zbz37nLlde8sN/8oDJcxpOQwBOJQBBt1+7w/+aX+iSD/ilh9NwGn4FdCoBCBIAk+c0BKA6AQgSAJPnNASguu2LP3uTAAEweU5jngCkD0JRAhDkkpu82Glc/o8OdU/jqH88EoCzCUCQyRMAARCA6gQg6KTJO8qDl/zwnzwgAEueRjgAhU5DAKoQgCCTJwCx0xAAAZiHAASZPAGInYYACMA8BCDI5AlA7DQEQADmsX3x528SYPIEIHYaAnBKALIHoSgBCDJ5AhA7DQEQgHkIQJDJE4DYaQiAAMxDAIJMngDETkMABGAeAhBk8gQgdhoCIADzEIAgkycAsdMQAAGYhwAEmTwBiJ2GAAjAPAQgyOQJQOw0BEAA5iEAQSZPAGKnIQACMA8BCDJ5AhA7DQEQgHlsX/r5WwSYPAGInYYAnCF9EIoSgCCTJwCx0xAAAZiHAASZPAGInYYACMA8BCDI5AlA7DQEQADmIQBBJk8AYqchAAIwDwEIMnkCEDsNARCAeQhAkMkTgNhpCIAAzEMAgkyeAMROQwAEYB4CEHT7Fb9e9Ut+LKfhNGLSB6EoAQhyyU2e0xh5GgJwBgEI8ksPvwKKncbtYK19Gpc/o18B5dq+9Iu3CDB5AhA7DQE4JQDZg1CUAASZPAGInYYACMA8BCDI5AlA7DQEQADmIQBBR33F615yAXAaI09DAM4gAEECYPKcxsjTEIAzCECQAJg8pzHyNATgDAIQJAAmz2mMPA0BOMP25V+8RYAAmDynMfI0Hi19EIoSgCABMHlOY+RpCMAZBCBIAEye0xh5GgJwBgEIEgCT5zRGnoYAnEEAggTA5DmNkachAGcQgKDDA1DOqZNXjtM4+zQE4AwCECQAJs9pjDwNATiDAAQJgMlzGiNPQwDOcBOAtwkY/6+7Gs8zrqHDM6YPQlECENThUnnGNXR4xvRBKEoAgjpcKs+4hg7PmD4IRQlAUIdL5RnX0OEZ0wehKAEI6nCpPOMaOjxj+iAUtX35l28T0OFSecY1dHjG9EEoSgCCOlwqz7iGDs+YPghFCUBQh0vlGdfQ4RnTB6EoAQjqcKk84xo6PGP6IBS1/fMv3yagw6XyjGvo8Izpg1CUAAR1uFSecQ0dnjF9EIoSgKAOl8ozrqHDM6YPQlECEHR7qYAZpA9CUQIQlP6NBz6UPghFCUDQ7dcu/W++p/KMa+jwjOmDUJQABHW4VJ5xDR2eMX0QihKAoA6XyjOuocMzpg9CUQIQ1OFSecY1dHjG9EEoSgCCXGPP6Bnnecb0QShKAII6XCrP6BmrPGP6IBQlAEEdLpVn9IxVnjF9EIoSgKAOl8ozesYqz5g+CEUJQFCHS+UZPWOVZ0wfhKIEIKjDpfKMnrHKM6YPQlECENThUnlGz1jlGdMHoSgBCOpwqTyjZ6zyjOmDUNT2L8++Q0CHS+UZPWOVZ0wfhKIEIKjDpfKMnrHKM6YPQlECEHTUF/cjH/9oUWdc4/SHGnAal49j+kOFCUAVAhBk8gQgdhoCIADzEIAgkycAsdMQAAGYx4IB+Ksn/nrAn3L45H3syScOdO9tPOknnxqAhU8jEIByp1ExAGN2YzblA3Dz2i5x+J9r8gQgdhoCMEMAsnZjNlUDcOH7O++NnjR53372O3e58pIf/pMHBGDJ0wgHoNBpTBuA9N2YTb0AhF/hsa/T5AmAABQKwCS7MZtiATjkLR7yLk2eAAhAlQDMsxuzqRSAA9/i9e/S5AmAAJQIwFS7MZsaATj8FV7/Ok2eAAjA5AGYcDdmUyAAp77F8Ls0eQIgADMHYM7dmI0ACIAACIAACMCUBrzF2Ls8afKO8uAlP/wnDwjAkqfhvwcwIADT7sZspg7AsLcYeJcmTwBipyEAZwdg5t2YzbwBGPwW977L26/49apf8mM5DacRU2U3ZrN95dl35pTyIi//eC65yXMaI0/j0arsxmwmDUDKW9z1Lv3Sw6+AYqdxO1hrn8blz3iUKrsxGwEQgNMnz2kIgADMafvKr96ZUOaLvOwTmjwBiJ2GAJwSgCK7MZsZA5D4Fi9/lyZPAGKnIQAnBaDEbsxGAIIv8qiveN1LLgBOY+RpCIAATPQiBcDkOY2RpyEAAjDRixQAk+c0Rp6GAJwUgD/OZoIX+fgPKQAmz2mMPI3HBaDGbsxGAARgokvuNJyGALQOQPpbvPBdCoDJcxojT+PR0hejaAMEQAAmuuROw2kIQN8ApL+/y9+lAJg8pzHyNOZf/4oNmCgA6W9u17sUAJPnNEaeRon1L9eAWQKQ/s72vksBMHlOY+RpVFn/Wg0QAAGY6JI7DachAO0CkP62Au9SAEye0xh5GoXWv1ADtq/+6o/p0l/Voz30MwuAyXMaI0+jXADSd/US+QFIf0+xdykAJs9pjDyNWutfpQECIAATXXKn4TQEQACmIwAmz2nknoYACMBEL1IATJ7TGHkaAiAAE71IATB5TmPkaQjAggFIf0PhdykAp07ewnw3mqx/iQZsX/31H3Olv6GL3uIDH1sABEAAsgJQpQHp6/pYAiAAE13y9HUWgGm/GwIgABO9SAEQAAEQAAEQAAEQAAEQAAEQAAEQAAEQAAFYqQEP/cy3Abhe3Ut+1Ak89DTO+ORZ7nso342jpC9D9fUXAAGY65ILgO+GALQLwMwNuOsD334F/Qro1F8BHfvJs/gVUMNfBKUvqgAIQL1LLgC+GwLQMQBzNuARn1YABCDwLgSgQwPSt3RHAL726z/N45DTP/DnPMLhAShHAIYFoJyRATiqAWN2YzZzBeD6d/CJv/2bW2e/xZMmrxABiAXg8n90SH/FYUf949GwBgzbjdlMF4BrGvDhW7zyXV7yIQVAAATgLuMDUGU3ZjNjAAIZuO8Vfmjvz7n84438ct8af6nGE4A1pASgxG7MZt4AXPg6b//fHvEid/2cy3W4VOMJwBoSAzD5bsxmS/8Eu9x14o99kRf+nMt1uFTjCcAa0gMw7W7MZkv/BIfY+yKv1+FSjScAa5gtAPPsxmy29E9wCAFYgwCsQQCq2NI/wSEEYA0CsAYBqGJL/wSHEIA1CMAaBKCK7WvP/WkBd77I0/7EDpdqPAFYQ0IAiuzGbLb0T3AIAViDAKxBAKrY0j/BIQRgDQKwBgGoYkv/BIcQgDUIwBoEoIot/RMcQgDWIABrEIAqtvRPcAgBWIMArEEAqtjSP8EhBGANArAGAahie+q5Py3grhd53p/Y4VKNJwBrGP+MVXZjNlv6JziEAKxBANYgAFVs6Z/gEAKwhvu2ckkd3qMAVLGlf4JDCMAa0tf5mIl/+u8EQABK2NI/wSEEYA3p233l7j9IAMaoshuz2dI/wSEEYA3pI37s+j+0AR3eowBUsaV/gkMIwBrSd1wADiEAVWzpn+AQArCG9B0XgEMIQBXbU8+9u4C7X+RZf+LtV5xj3beV6f8Jzgs9Yv0fbED6IS+pym7MRgCC0r/xSyoagEc34KF/A+BYVXZjNgIQ1OGv1eP1CUD6UZ9q/DNW2Y3ZCEBQh0s1ngCsQQCqEICgDpdqvLoBuKsBH/Ovghiiym7MRgCCOlyq8UoH4N4S3Pt/CsAAVXZjNttTv3l3AXe+yNP+RNf4DGsE4D73PVSH9zheld2YjQAEdbhUAiAAVVTZjdkIQFCHSyUAAlBFld2Yzfavv3l3AXe9yPP+xA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKkEQACqqLIbsxGAoA6XSgAEoIoquzEbAQjqcKnSA7CkDu9xvCq7MRsBCOpwqQRAAKqoshuz2f7t+fcWcNeLPO9P7HCpBEAAqqiyG7MRgKAOl0oABKCKKrsxGwEI6nCpBEAAqqiyG7MRgKAOl0oABKCKKrsxGwEIur1UHCt9nQdIP+QlVdmN2QhAUPo3fknp6ywARVXZjdkIQNDt1y79b76nGv+M6es8QIf3OF6V3ZiNAAR1uFQCIABVVNmN2SwegPTvJTCtvbuRPnSHEwCgKQFYJAD3Sv9WAUtKH7fDCQDARdLH7XACAHCR9HE7nAAAXCR93A4nAAAXSR+3wwkAwEXSx+1wCwYg/b+VDiwpfdwOt339+fcWk/4tAZaUPm6HWzAAAFxCAACaEgCAprav//Y9ABoSAICmBACgKQEAaEoAAJq6CcD7ADQkAABNCQBAUwIA0JQAADQlAABNCQBAUwIA0NT2jd++D0BDAgDQlAAANCUAAE0JAEBTAgDQlAAANLV943fvA9CQAAA0JQAATQkAQFMCANCUAAA0JQAATQkAQFMCANCUAAA0tX3zdx8A0JAAADQlAABNCQBAUwIA0JQAADQlAABNCQBAUwIA0JQAADQlAABNbd/8/QcANCQAAE0JAEBTAgDQlAAANCUAAE1t3/r9BwA0JAAATQkAQFMCANCUAAA0JQAATQkAQFMCANCUAAA0dROAPwPQkAAANCUAAE0JAEBTAgDQ1PatP/wZgIYEAKApAQBoavv3P/wZgIYEAKApAQBoSgAAmhIAgKYEAKApAQBoSgAAmhIAgKYEAKApAQBoSgAAmhIAgKYEAKApAQBoSgAAmhIAgKb+B9/dtLcKyKs5AAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --ink: #1a1a18; --ink-2: #4a4a45; --ink-3: #8a8a82; --ink-4: #c8c8be;
-  --paper: #f9f8f4; --paper-2: #f2f1eb; --paper-3: #e8e6dc;
-  --stone: #6b6b65; --stone-dark: #4a4a45; --stone-light: #9a9a92;
-  --accent: #2d5a3d; --accent-light: #e8f0eb;
-  --blue: #1a4a7a; --blue-light: #e8f0f8;
-  --danger: #c8461a; --danger-light: #fdf0ec;
-  --radius: 6px; --radius-lg: 12px;
-  --safe-b: env(safe-area-inset-bottom, 0px);
-  --safe-t: env(safe-area-inset-top, 0px);
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --ink:#1a1a18;--ink-2:#4a4a45;--ink-3:#8a8a82;--ink-4:#c8c8be;
+  --paper:#f9f8f4;--paper-2:#f2f1eb;--paper-3:#e8e6dc;
+  --stone-dark:#4a4a45;
+  --accent:#2d5a3d;--accent-light:#e8f0eb;
+  --blue:#1a4a7a;--blue-light:#e8f0f8;
+  --danger:#c8461a;--danger-light:#fdf0ec;
+  --radius:6px;--radius-lg:12px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:env(safe-area-inset-top,0px);
 }
-html { -webkit-text-size-adjust: 100%; }
-body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); min-height: 100vh; overscroll-behavior: none; }
+html{-webkit-text-size-adjust:100%;}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;overscroll-behavior:none;}
 
-#pin-screen {
-  position: fixed; inset: 0; z-index: 9999;
-  background: var(--stone-dark);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  padding: 2rem 2rem calc(2rem + var(--safe-b));
-  padding-top: calc(3rem + var(--safe-t));
+/* ── PIN ── */
+#pin-screen{
+  position:fixed;inset:0;z-index:9999;
+  background:#4a4a45;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding-top:max(3rem,env(safe-area-inset-top,0px));
+  padding-bottom:max(2rem,env(safe-area-inset-bottom,0px));
 }
-.pin-logo { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--paper); margin-bottom: 0.4rem; }
-.pin-logo span { color: #c8c8be; font-style: italic; }
-.pin-tagline { font-size: 0.82rem; color: #9a9a92; margin-bottom: 3rem; letter-spacing: 0.04em; }
-.pin-dots { display: flex; gap: 1.25rem; margin-bottom: 0.75rem; }
-.pin-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid #7a7a72; background: transparent; transition: background 0.15s, border-color 0.15s, transform 0.15s; }
-.pin-dot.filled { background: var(--paper); border-color: var(--paper); transform: scale(1.1); }
-.pin-dot.error { background: var(--danger); border-color: var(--danger); }
-.pin-error { height: 1.5rem; font-size: 0.82rem; color: #e87060; margin-bottom: 1.75rem; text-align: center; }
-.pin-grid { display: grid; grid-template-columns: repeat(3, 72px); gap: 1rem; width: fit-content; }
-.pin-key { width: 72px; height: 72px; background: rgba(255,255,255,0.1); border: none; border-radius: 50%; color: var(--paper); font-size: 1.5rem; font-weight: 300; font-family: 'DM Sans', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.12s, transform 0.1s; -webkit-tap-highlight-color: transparent; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
-.pin-key:active, .pin-key.pressed { background: rgba(255,255,255,0.25); transform: scale(0.91); }
-.pin-key.del { font-size: 1.4rem; background: transparent; color: #c8c8be; }
-.pin-key.del:active { background: rgba(255,255,255,0.1); }
-.pin-key.empty { background: transparent; pointer-events: none; }
+.pin-logo{font-family:'DM Serif Display',serif;font-size:1.5rem;color:#f9f8f4;margin-bottom:0.4rem;}
+.pin-logo span{color:#c8c8be;font-style:italic;}
+.pin-tagline{font-size:0.82rem;color:#9a9a92;margin-bottom:2.5rem;}
+.pin-dots{display:flex;gap:1.25rem;margin-bottom:0.5rem;}
+.pin-dot{width:16px;height:16px;border-radius:50%;border:2px solid #7a7a72;background:transparent;transition:all 0.15s;}
+.pin-dot.filled{background:#f9f8f4;border-color:#f9f8f4;transform:scale(1.1);}
+.pin-dot.error{background:#c8461a;border-color:#c8461a;}
+.pin-error{height:1.5rem;font-size:0.82rem;color:#e87060;margin-bottom:1.5rem;text-align:center;}
+.pin-grid{display:grid;grid-template-columns:repeat(3,80px);gap:1rem;}
+.pin-key{
+  width:80px;height:80px;
+  background:rgba(255,255,255,0.12);
+  border:none;border-radius:50%;
+  color:#f9f8f4;font-size:1.6rem;font-weight:300;
+  font-family:'DM Sans',sans-serif;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+  user-select:none;-webkit-user-select:none;
+  display:flex;align-items:center;justify-content:center;
+}
+.pin-key:active{background:rgba(255,255,255,0.3);transform:scale(0.91);}
+.pin-key.del{font-size:1.8rem;color:#c8c8be;background:transparent;}
+.pin-key.del:active{background:rgba(255,255,255,0.12);}
+.pin-key.empty{background:transparent;pointer-events:none;}
 
-#app { display: none; min-height: 100vh; }
+/* ── APP ── */
+#app{display:none;min-height:100vh;}
+.app-header{background:var(--stone-dark);color:var(--paper);padding:0 1rem;padding-top:var(--safe-t);display:flex;align-items:center;justify-content:space-between;height:calc(52px + var(--safe-t));position:sticky;top:0;z-index:100;gap:0.75rem;}
+.header-left{display:flex;align-items:center;gap:0.6rem;flex-shrink:0;}
+.home-btn{background:rgba(255,255,255,0.12);border:none;color:var(--paper);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1rem;flex-shrink:0;-webkit-tap-highlight-color:transparent;}
+.home-btn:active{background:rgba(255,255,255,0.25);}
+.logo{font-family:'DM Serif Display',serif;font-size:1rem;white-space:nowrap;}
+.logo span{color:#c8c8be;font-style:italic;}
+.header-center{flex:1;min-width:0;}
+.header-prop{font-size:0.72rem;color:#c8c8be;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;background:rgba(255,255,255,0.1);border-radius:6px;padding:0.3rem 0.65rem;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.header-prop.empty{opacity:0;pointer-events:none;}
+.header-right{display:flex;align-items:center;flex-shrink:0;}
+.lock-btn{background:none;border:none;color:#9a9a92;width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.95rem;-webkit-tap-highlight-color:transparent;}
+.lock-btn:active{background:rgba(255,255,255,0.1);}
 
-.app-header { background: var(--stone-dark); color: var(--paper); padding: 0 1rem; padding-top: var(--safe-t); display: flex; align-items: center; justify-content: space-between; height: calc(52px + var(--safe-t)); position: sticky; top: 0; z-index: 100; gap: 0.75rem; }
-.header-left { display: flex; align-items: center; gap: 0.6rem; flex-shrink: 0; }
-.home-btn { background: rgba(255,255,255,0.12); border: none; color: var(--paper); width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1rem; flex-shrink: 0; -webkit-tap-highlight-color: transparent; transition: background 0.15s; }
-.home-btn:active { background: rgba(255,255,255,0.25); }
-.logo { font-family: 'DM Serif Display', serif; font-size: 1rem; white-space: nowrap; }
-.logo span { color: #c8c8be; font-style: italic; }
-.header-center { flex: 1; min-width: 0; }
-.header-prop { font-size: 0.72rem; color: #c8c8be; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; background: rgba(255,255,255,0.1); border-radius: 6px; padding: 0.3rem 0.65rem; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background 0.15s; }
-.header-prop:active { background: rgba(255,255,255,0.2); }
-.header-prop.empty { opacity: 0; pointer-events: none; }
-.header-right { display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0; }
-.lock-btn { background: none; border: none; color: #9a9a92; width: 34px; height: 34px; border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.95rem; -webkit-tap-highlight-color: transparent; transition: background 0.15s; }
-.lock-btn:active { background: rgba(255,255,255,0.1); }
+/* ── HOME ── */
+.home-screen{max-width:820px;margin:0 auto;padding:1.5rem 1.25rem;padding-bottom:calc(3rem + var(--safe-b));}
+.home-title{font-family:'DM Serif Display',serif;font-size:1.6rem;margin-bottom:0.35rem;}
+.home-subtitle{font-size:0.85rem;color:var(--ink-3);margin-bottom:2rem;}
+.prop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.85rem;}
+.prop-card{background:#fff;border:1px solid var(--paper-3);border-radius:var(--radius-lg);padding:1.25rem;cursor:pointer;-webkit-tap-highlight-color:transparent;}
+.prop-card:active{border-color:var(--accent);}
+.prop-card-icon{font-size:1.5rem;margin-bottom:0.65rem;}
+.prop-card-name{font-weight:600;font-size:0.95rem;margin-bottom:0.25rem;}
+.prop-card-meta{font-size:0.78rem;color:var(--ink-3);}
+.prop-card-add{background:var(--paper-2);border:1.5px dashed var(--paper-3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;color:var(--ink-3);min-height:100px;}
+.prop-card-add .add-icon{font-size:1.5rem;}
+.prop-card-add span{font-size:0.85rem;}
 
-.home-screen { max-width: 820px; margin: 0 auto; padding: 1.5rem 1.25rem; padding-bottom: calc(3rem + var(--safe-b)); }
-.home-title { font-family: 'DM Serif Display', serif; font-size: 1.6rem; margin-bottom: 0.35rem; }
-.home-subtitle { font-size: 0.85rem; color: var(--ink-3); margin-bottom: 2rem; }
-.prop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.85rem; }
-.prop-card { background: #fff; border: 1px solid var(--paper-3); border-radius: var(--radius-lg); padding: 1.25rem; cursor: pointer; transition: border-color 0.15s; -webkit-tap-highlight-color: transparent; }
-.prop-card:active { border-color: var(--accent); }
-.prop-card-icon { font-size: 1.5rem; margin-bottom: 0.65rem; }
-.prop-card-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem; }
-.prop-card-meta { font-size: 0.78rem; color: var(--ink-3); }
-.prop-card-add { background: var(--paper-2); border: 1.5px dashed var(--paper-3); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; color: var(--ink-3); min-height: 100px; }
-.prop-card-add .add-icon { font-size: 1.5rem; }
-.prop-card-add span { font-size: 0.85rem; }
+.prop-bar{background:var(--paper-2);border-bottom:1px solid var(--paper-3);padding:0.6rem 1.25rem;display:flex;align-items:center;gap:0.75rem;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.prop-bar::-webkit-scrollbar{display:none;}
+.prop-bar-label{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink-3);white-space:nowrap;flex-shrink:0;}
+.chip{padding:0.4rem 1rem;border-radius:20px;border:1px solid var(--paper-3);background:var(--paper);font-size:0.82rem;cursor:pointer;color:var(--ink-2);white-space:nowrap;font-family:'DM Sans',sans-serif;-webkit-tap-highlight-color:transparent;}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500;}
+.chip.add{border-style:dashed;color:var(--ink-3);}
+.tabs-bar{display:flex;border-bottom:1px solid var(--paper-3);background:var(--paper);overflow-x:auto;scrollbar-width:none;}
+.tabs-bar::-webkit-scrollbar{display:none;}
+.tab-btn{padding:0.9rem 1.1rem;font-size:0.85rem;font-weight:500;color:var(--ink-3);background:none;border:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;font-family:'DM Sans',sans-serif;-webkit-tap-highlight-color:transparent;}
+.tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
+.main{max-width:820px;margin:0 auto;padding:1.25rem;padding-bottom:calc(3rem + var(--safe-b));}
 
-.prop-bar { background: var(--paper-2); border-bottom: 1px solid var(--paper-3); padding: 0.6rem 1.25rem; display: flex; align-items: center; gap: 0.75rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
-.prop-bar::-webkit-scrollbar { display: none; }
-.prop-bar-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); white-space: nowrap; flex-shrink: 0; }
-.chip { padding: 0.4rem 1rem; border-radius: 20px; border: 1px solid var(--paper-3); background: var(--paper); font-size: 0.82rem; cursor: pointer; color: var(--ink-2); white-space: nowrap; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; }
-.chip.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 500; }
-.chip.add { border-style: dashed; color: var(--ink-3); }
-
-.tabs-bar { display: flex; border-bottom: 1px solid var(--paper-3); background: var(--paper); overflow-x: auto; scrollbar-width: none; }
-.tabs-bar::-webkit-scrollbar { display: none; }
-.tab-btn { padding: 0.9rem 1.1rem; font-size: 0.85rem; font-weight: 500; color: var(--ink-3); background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; }
-.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
-
-.main { max-width: 820px; margin: 0 auto; padding: 1.25rem; padding-bottom: calc(3rem + var(--safe-b)); }
-
-.btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.65rem 1.2rem; border-radius: var(--radius); font-size: 0.875rem; font-weight: 500; cursor: pointer; border: none; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-.btn:active { opacity: 0.8; }
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-blue { background: var(--blue); color: #fff; }
-.btn-ghost { background: transparent; color: var(--ink-2); border: 1px solid var(--paper-3); }
-.btn-danger { background: var(--danger); color: #fff; }
-.btn-sm { padding: 0.4rem 0.85rem; font-size: 0.8rem; }
-.btn-full { width: 100%; justify-content: center; padding: 0.8rem; font-size: 0.95rem; }
-.btn-generate { width: 100%; justify-content: center; padding: 1.1rem 1.5rem; font-size: 1.1rem; font-weight: 600; border-radius: var(--radius-lg); background: var(--accent); color: #fff; letter-spacing: 0.01em; box-shadow: 0 3px 12px rgba(45,90,61,0.25); margin-top: 0.5rem; display: flex; align-items: center; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-.btn-generate:active { transform: scale(0.98); box-shadow: 0 1px 6px rgba(45,90,61,0.2); opacity: 0.9; }
-
-.card { background: #fff; border: 1px solid var(--paper-3); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1rem; }
-.card-title { font-family: 'DM Serif Display', serif; font-size: 1.05rem; margin-bottom: 1.1rem; padding-bottom: 0.65rem; border-bottom: 1px solid var(--paper-2); }
-
-.fg { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
-.fg.c1 { grid-template-columns: 1fr; }
-.fg.c3 { grid-template-columns: 1fr 1fr 1fr; }
-.field { display: flex; flex-direction: column; gap: 0.3rem; }
-.field.s2 { grid-column: span 2; }
-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--ink-3); }
-input[type="text"], input[type="number"], input[type="date"], input[type="email"], textarea, select { padding: 0.65rem 0.8rem; border: 1px solid var(--paper-3); border-radius: var(--radius); font-size: 0.9rem; font-family: 'DM Sans', sans-serif; color: var(--ink); background: var(--paper); width: 100%; -webkit-appearance: none; min-height: 44px; }
-input:focus, textarea:focus, select:focus { outline: none; border-color: var(--accent); background: #fff; }
-textarea { resize: vertical; min-height: 70px; }
-.hint { font-size: 0.72rem; color: var(--ink-3); line-height: 1.4; }
-
-.amt-table { width: 100%; border-collapse: collapse; }
-.amt-table td { padding: 0.45rem 0; border-bottom: 1px solid var(--paper-2); font-size: 0.85rem; vertical-align: middle; }
-.amt-table td:last-child { width: 130px; }
-.amt-table td input { text-align: right; min-height: 40px; }
-.amt-table .tot td { font-weight: 600; border-bottom: none; padding-top: 0.85rem; }
-
-.sig-box { border: 1.5px dashed var(--paper-3); border-radius: var(--radius); padding: 1.25rem; text-align: center; cursor: pointer; background: var(--paper); min-height: 80px; display: flex; align-items: center; justify-content: center; }
-.sig-box img { max-height: 70px; max-width: 200px; object-fit: contain; }
-
-.qdoc { background: #fff; border: 1px solid var(--ink-4); border-radius: var(--radius); padding: 1.25rem; font-family: Arial, sans-serif; font-size: 11px; color: #111; overflow-x: auto; }
-.qh { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; gap: 0.75rem; }
-.qprop { font-size: 10.5px; line-height: 1.6; color: #333; flex: 1; }
-.qtitle-block { text-align: right; flex-shrink: 0; padding-right: 6px; }
-.qtitle { font-size: 14px; font-weight: bold; color: #1a6e3a; text-transform: uppercase; }
-.qnum { font-size: 10px; margin-top: 3px; color: #555; }
-.qtab { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 10.5px; }
-.qtab th { background: #f0f0f0; padding: 3px 6px; border: 1px solid #ccc; text-align: left; font-size: 10px; }
-.qtab td { border: 1px solid #ddd; padding: 3px 6px; }
-.qtab td:last-child { text-align: right; }
-.qtab .tot-r td { background: #f9f9f9; font-weight: bold; border-top: 2px solid #999; }
-.qbody { border: 1px solid #ddd; border-radius: 2px; padding: 0.85rem; margin-bottom: 0.85rem; line-height: 1.8; font-size: 11px; }
-.qres { font-style: italic; color: #666; font-size: 9.5px; border-top: 1px solid #ddd; padding-top: 0.5rem; margin-top: 0.6rem; }
-.qfooter { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1rem; font-size: 10.5px; }
-
-.arc-item { background: #fff; border: 1px solid var(--paper-3); border-radius: var(--radius-lg); padding: 0.85rem 1rem; display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
-.arc-badge { background: var(--accent-light); color: var(--accent); font-size: 0.72rem; font-weight: 600; padding: 0.28rem 0.6rem; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
-.arc-info { flex: 1; min-width: 120px; }
-.arc-tenant { font-weight: 500; font-size: 0.875rem; }
-.arc-period { font-size: 0.76rem; color: var(--ink-3); margin-top: 2px; }
-.arc-amount { font-weight: 600; font-size: 0.95rem; color: var(--accent); white-space: nowrap; flex-shrink: 0; }
-.arc-actions { display: flex; gap: 0.4rem; margin-left: auto; flex-wrap: wrap; justify-content: flex-end; }
-
-.gen-box { background: var(--accent-light); border: 1px solid #b8d4c0; border-radius: var(--radius); padding: 0.9rem 1.1rem; margin-bottom: 1.1rem; font-size: 0.85rem; line-height: 1.7; color: var(--accent); }
-.notice { background: #fffbf0; border: 1px solid #f0d890; border-radius: var(--radius); padding: 0.6rem 0.85rem; font-size: 0.78rem; color: #7a6010; margin-bottom: 0.85rem; line-height: 1.5; }
-.mail-banner { background: var(--blue-light); border: 1px solid #b0c8e8; border-radius: var(--radius-lg); padding: 1rem 1.25rem; margin-bottom: 1rem; }
-.mail-banner-title { font-weight: 600; font-size: 0.9rem; color: var(--blue); margin-bottom: 0.35rem; }
-.mail-banner p { font-size: 0.82rem; color: #2a4a6a; line-height: 1.55; }
-.mail-banner .attach-tip { margin-top: 0.6rem; background: #fff; border: 1px solid #b0c8e8; border-radius: var(--radius); padding: 0.6rem 0.8rem; font-size: 0.8rem; color: var(--blue); }
-.mail-banner .attach-tip strong { display: block; margin-bottom: 0.2rem; }
-.sec-hdr { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem; }
-.sec-title { font-family: 'DM Serif Display', serif; font-size: 1.25rem; }
-.spinner { width: 28px; height: 28px; border: 2px solid var(--paper-3); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
-.loading { display: flex; align-items: center; justify-content: center; min-height: 50vh; gap: 1rem; color: var(--ink-3); font-size: 0.875rem; }
-.toast { position: fixed; bottom: calc(1.5rem + var(--safe-b)); left: 50%; transform: translateX(-50%) translateY(14px); background: var(--stone-dark); color: #fff; padding: 0.8rem 1.4rem; border-radius: var(--radius-lg); font-size: 0.875rem; opacity: 0; transition: all 0.25s; z-index: 9998; pointer-events: none; white-space: nowrap; max-width: calc(100vw - 2.5rem); text-align: center; }
-.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200; display: flex; align-items: flex-end; justify-content: center; }
-@media (min-width: 600px) { .overlay { align-items: center; } }
-.modal { background: #fff; border-radius: var(--radius-lg) var(--radius-lg) 0 0; padding: 1.5rem; padding-bottom: calc(1.5rem + var(--safe-b)); width: 100%; max-height: 90vh; overflow-y: auto; }
-@media (min-width: 600px) { .modal { max-width: 480px; border-radius: var(--radius-lg); padding-bottom: 1.5rem; } }
-.modal-handle { width: 36px; height: 4px; background: var(--paper-3); border-radius: 2px; margin: 0 auto 1.25rem; }
-.modal-title { font-family: 'DM Serif Display', serif; font-size: 1.2rem; margin-bottom: 0.25rem; }
-.modal-subtitle { font-size: 0.82rem; color: var(--ink-3); margin-bottom: 1.25rem; }
-.modal-actions { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1.1rem; }
-@media (min-width: 600px) { .modal-actions { flex-direction: row; justify-content: flex-end; } }
-.del-info { background: var(--danger-light); border: 1px solid #f5c4b0; border-radius: var(--radius); padding: 0.8rem 0.95rem; font-size: 0.84rem; color: var(--danger); margin-bottom: 0.85rem; line-height: 1.5; }
-.mail-preview { background: var(--paper); border: 1px solid var(--paper-3); border-radius: var(--radius); padding: 1rem; font-size: 0.82rem; line-height: 1.7; color: var(--ink-2); margin-bottom: 1rem; }
-.mail-field { display: flex; gap: 0.5rem; margin-bottom: 0.35rem; font-size: 0.78rem; }
-.mail-field strong { color: var(--ink-3); min-width: 45px; }
-.mail-body { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--paper-3); white-space: pre-line; }
-.mail-attach { margin-top: 0.6rem; padding: 0.5rem 0.7rem; background: var(--blue-light); border: 1px solid #b0c8e8; border-radius: var(--radius); font-size: 0.78rem; color: var(--blue); display: flex; align-items: center; gap: 0.5rem; }
-.empty-state { text-align: center; padding: 4rem 1.5rem; }
-.empty-state .icon { width: 64px; height: 64px; margin: 0 auto 1.25rem; background: var(--paper-2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; }
-.empty-state h2 { font-family: 'DM Serif Display', serif; font-size: 1.4rem; margin-bottom: 0.5rem; }
-.empty-state p { color: var(--ink-3); font-size: 0.875rem; margin-bottom: 1.5rem; line-height: 1.6; }
-@media (max-width: 599px) { .fg { grid-template-columns: 1fr; } .fg.c3 { grid-template-columns: 1fr 1fr; } .field.s2 { grid-column: span 1; } .main { padding: 1rem; padding-bottom: calc(3rem + var(--safe-b)); } .home-screen { padding: 1.25rem 1rem; } .prop-grid { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 600px) { .main { padding: 1.75rem; } }
+.btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.65rem 1.2rem;border-radius:var(--radius);font-size:0.875rem;font-weight:500;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
+.btn:active{opacity:0.8;}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-blue{background:var(--blue);color:#fff;}
+.btn-ghost{background:transparent;color:var(--ink-2);border:1px solid var(--paper-3);}
+.btn-danger{background:var(--danger);color:#fff;}
+.btn-sm{padding:0.4rem 0.85rem;font-size:0.8rem;}
+.btn-full{width:100%;justify-content:center;padding:0.8rem;font-size:0.95rem;}
+.btn-generate{width:100%;justify-content:center;padding:1.1rem 1.5rem;font-size:1.1rem;font-weight:600;border-radius:var(--radius-lg);background:var(--accent);color:#fff;letter-spacing:0.01em;box-shadow:0 3px 12px rgba(45,90,61,0.25);margin-top:0.5rem;display:flex;align-items:center;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;-webkit-tap-highlight-color:transparent;touch-action:manipulation;}
+.btn-generate:active{transform:scale(0.98);opacity:0.9;}
+.card{background:#fff;border:1px solid var(--paper-3);border-radius:var(--radius-lg);padding:1.25rem;margin-bottom:1rem;}
+.card-title{font-family:'DM Serif Display',serif;font-size:1.05rem;margin-bottom:1.1rem;padding-bottom:0.65rem;border-bottom:1px solid var(--paper-2);}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:0.85rem;}
+.fg.c1{grid-template-columns:1fr;}
+.fg.c3{grid-template-columns:1fr 1fr 1fr;}
+.field{display:flex;flex-direction:column;gap:0.3rem;}
+.field.s2{grid-column:span 2;}
+label{font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--ink-3);}
+input[type="text"],input[type="number"],input[type="date"],input[type="email"],textarea,select{padding:0.65rem 0.8rem;border:1px solid var(--paper-3);border-radius:var(--radius);font-size:0.9rem;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);width:100%;-webkit-appearance:none;min-height:44px;}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent);background:#fff;}
+textarea{resize:vertical;min-height:70px;}
+.hint{font-size:0.72rem;color:var(--ink-3);line-height:1.4;}
+.amt-table{width:100%;border-collapse:collapse;}
+.amt-table td{padding:0.45rem 0;border-bottom:1px solid var(--paper-2);font-size:0.85rem;vertical-align:middle;}
+.amt-table td:last-child{width:130px;}
+.amt-table td input{text-align:right;min-height:40px;}
+.amt-table .tot td{font-weight:600;border-bottom:none;padding-top:0.85rem;}
+.sig-box{border:1.5px dashed var(--paper-3);border-radius:var(--radius);padding:1.25rem;text-align:center;cursor:pointer;background:var(--paper);min-height:80px;display:flex;align-items:center;justify-content:center;}
+.sig-box img{max-height:70px;max-width:200px;object-fit:contain;}
+.qdoc{background:#fff;border:1px solid var(--ink-4);border-radius:var(--radius);padding:1.25rem;font-family:Arial,sans-serif;font-size:11px;color:#111;overflow-x:auto;}
+.qh{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;gap:0.75rem;}
+.qprop{font-size:10.5px;line-height:1.6;color:#333;flex:1;}
+.qtitle-block{text-align:right;flex-shrink:0;padding-right:6px;}
+.qtitle{font-size:14px;font-weight:bold;color:#1a6e3a;text-transform:uppercase;}
+.qnum{font-size:10px;margin-top:3px;color:#555;}
+.qtab{width:100%;border-collapse:collapse;margin-bottom:1rem;font-size:10.5px;}
+.qtab th{background:#f0f0f0;padding:3px 6px;border:1px solid #ccc;text-align:left;font-size:10px;}
+.qtab td{border:1px solid #ddd;padding:3px 6px;}
+.qtab td:last-child{text-align:right;}
+.qtab .tot-r td{background:#f9f9f9;font-weight:bold;border-top:2px solid #999;}
+.qbody{border:1px solid #ddd;border-radius:2px;padding:0.85rem;margin-bottom:0.85rem;line-height:1.8;font-size:11px;}
+.qres{font-style:italic;color:#666;font-size:9.5px;border-top:1px solid #ddd;padding-top:0.5rem;margin-top:0.6rem;}
+.qfooter{display:flex;justify-content:space-between;align-items:flex-end;margin-top:1rem;font-size:10.5px;}
+.arc-item{background:#fff;border:1px solid var(--paper-3);border-radius:var(--radius-lg);padding:0.85rem 1rem;display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem;flex-wrap:wrap;}
+.arc-badge{background:var(--accent-light);color:var(--accent);font-size:0.72rem;font-weight:600;padding:0.28rem 0.6rem;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.arc-info{flex:1;min-width:120px;}
+.arc-tenant{font-weight:500;font-size:0.875rem;}
+.arc-period{font-size:0.76rem;color:var(--ink-3);margin-top:2px;}
+.arc-amount{font-weight:600;font-size:0.95rem;color:var(--accent);white-space:nowrap;flex-shrink:0;}
+.arc-actions{display:flex;gap:0.4rem;margin-left:auto;flex-wrap:wrap;justify-content:flex-end;}
+.gen-box{background:var(--accent-light);border:1px solid #b8d4c0;border-radius:var(--radius);padding:0.9rem 1.1rem;margin-bottom:1.1rem;font-size:0.85rem;line-height:1.7;color:var(--accent);}
+.notice{background:#fffbf0;border:1px solid #f0d890;border-radius:var(--radius);padding:0.6rem 0.85rem;font-size:0.78rem;color:#7a6010;margin-bottom:0.85rem;line-height:1.5;}
+.mail-banner{background:var(--blue-light);border:1px solid #b0c8e8;border-radius:var(--radius-lg);padding:1rem 1.25rem;margin-bottom:1rem;}
+.mail-banner-title{font-weight:600;font-size:0.9rem;color:var(--blue);margin-bottom:0.35rem;}
+.mail-banner p{font-size:0.82rem;color:#2a4a6a;line-height:1.55;}
+.mail-banner .attach-tip{margin-top:0.6rem;background:#fff;border:1px solid #b0c8e8;border-radius:var(--radius);padding:0.6rem 0.8rem;font-size:0.8rem;color:var(--blue);}
+.mail-banner .attach-tip strong{display:block;margin-bottom:0.2rem;}
+.sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:0.5rem;}
+.sec-title{font-family:'DM Serif Display',serif;font-size:1.25rem;}
+.spinner{width:28px;height:28px;border:2px solid var(--paper-3);border-top-color:var(--accent);border-radius:50%;animation:spin 0.7s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.loading{display:flex;align-items:center;justify-content:center;min-height:50vh;gap:1rem;color:var(--ink-3);font-size:0.875rem;}
+.toast{position:fixed;bottom:calc(1.5rem + var(--safe-b));left:50%;transform:translateX(-50%) translateY(14px);background:var(--stone-dark);color:#fff;padding:0.8rem 1.4rem;border-radius:var(--radius-lg);font-size:0.875rem;opacity:0;transition:all 0.25s;z-index:9998;pointer-events:none;white-space:nowrap;max-width:calc(100vw - 2.5rem);text-align:center;}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:200;display:flex;align-items:flex-end;justify-content:center;}
+@media(min-width:600px){.overlay{align-items:center;}}
+.modal{background:#fff;border-radius:var(--radius-lg) var(--radius-lg) 0 0;padding:1.5rem;padding-bottom:calc(1.5rem + var(--safe-b));width:100%;max-height:90vh;overflow-y:auto;}
+@media(min-width:600px){.modal{max-width:480px;border-radius:var(--radius-lg);padding-bottom:1.5rem;}}
+.modal-handle{width:36px;height:4px;background:var(--paper-3);border-radius:2px;margin:0 auto 1.25rem;}
+.modal-title{font-family:'DM Serif Display',serif;font-size:1.2rem;margin-bottom:0.25rem;}
+.modal-subtitle{font-size:0.82rem;color:var(--ink-3);margin-bottom:1.25rem;}
+.modal-actions{display:flex;flex-direction:column;gap:0.6rem;margin-top:1.1rem;}
+@media(min-width:600px){.modal-actions{flex-direction:row;justify-content:flex-end;}}
+.del-info{background:var(--danger-light);border:1px solid #f5c4b0;border-radius:var(--radius);padding:0.8rem 0.95rem;font-size:0.84rem;color:var(--danger);margin-bottom:0.85rem;line-height:1.5;}
+.mail-preview{background:var(--paper);border:1px solid var(--paper-3);border-radius:var(--radius);padding:1rem;font-size:0.82rem;line-height:1.7;color:var(--ink-2);margin-bottom:1rem;}
+.mail-field{display:flex;gap:0.5rem;margin-bottom:0.35rem;font-size:0.78rem;}
+.mail-field strong{color:var(--ink-3);min-width:45px;}
+.mail-body{margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--paper-3);white-space:pre-line;}
+.mail-attach{margin-top:0.6rem;padding:0.5rem 0.7rem;background:var(--blue-light);border:1px solid #b0c8e8;border-radius:var(--radius);font-size:0.78rem;color:var(--blue);display:flex;align-items:center;gap:0.5rem;}
+.empty-state{text-align:center;padding:4rem 1.5rem;}
+.empty-state .icon{width:64px;height:64px;margin:0 auto 1.25rem;background:var(--paper-2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.75rem;}
+.empty-state h2{font-family:'DM Serif Display',serif;font-size:1.4rem;margin-bottom:0.5rem;}
+.empty-state p{color:var(--ink-3);font-size:0.875rem;margin-bottom:1.5rem;line-height:1.6;}
+@media(max-width:599px){
+  .fg{grid-template-columns:1fr;} .fg.c3{grid-template-columns:1fr 1fr;}
+  .field.s2{grid-column:span 1;} .main{padding:1rem;padding-bottom:calc(3rem + var(--safe-b));}
+  .home-screen{padding:1.25rem 1rem;} .prop-grid{grid-template-columns:1fr 1fr;}
+}
+@media(min-width:600px){.main{padding:1.75rem;}}
 </style>
 </head>
 <body>
 
+<!-- PIN -->
 <div id="pin-screen">
   <div class="pin-logo">Quittances <span>de loyer</span></div>
   <div class="pin-tagline">Entrez votre code PIN</div>
   <div class="pin-dots">
-    <div class="pin-dot" id="d0"></div><div class="pin-dot" id="d1"></div>
-    <div class="pin-dot" id="d2"></div><div class="pin-dot" id="d3"></div>
+    <div class="pin-dot" id="d0"></div>
+    <div class="pin-dot" id="d1"></div>
+    <div class="pin-dot" id="d2"></div>
+    <div class="pin-dot" id="d3"></div>
   </div>
   <div class="pin-error" id="pin-error">&nbsp;</div>
   <div class="pin-grid">
-    <button class="pin-key" onclick="pk('1',this)">1</button>
-    <button class="pin-key" onclick="pk('2',this)">2</button>
-    <button class="pin-key" onclick="pk('3',this)">3</button>
-    <button class="pin-key" onclick="pk('4',this)">4</button>
-    <button class="pin-key" onclick="pk('5',this)">5</button>
-    <button class="pin-key" onclick="pk('6',this)">6</button>
-    <button class="pin-key" onclick="pk('7',this)">7</button>
-    <button class="pin-key" onclick="pk('8',this)">8</button>
-    <button class="pin-key" onclick="pk('9',this)">9</button>
+    <button class="pin-key" onclick="pinPress('1')">1</button>
+    <button class="pin-key" onclick="pinPress('2')">2</button>
+    <button class="pin-key" onclick="pinPress('3')">3</button>
+    <button class="pin-key" onclick="pinPress('4')">4</button>
+    <button class="pin-key" onclick="pinPress('5')">5</button>
+    <button class="pin-key" onclick="pinPress('6')">6</button>
+    <button class="pin-key" onclick="pinPress('7')">7</button>
+    <button class="pin-key" onclick="pinPress('8')">8</button>
+    <button class="pin-key" onclick="pinPress('9')">9</button>
     <button class="pin-key empty"></button>
-    <button class="pin-key" onclick="pk('0',this)">0</button>
-    <button class="pin-key del" onclick="pd()">&#x232B;</button>
+    <button class="pin-key" onclick="pinPress('0')">0</button>
+    <button class="pin-key del" onclick="pinDel()">&#x232B;</button>
   </div>
 </div>
 
+<!-- APP -->
 <div id="app">
   <header class="app-header">
     <div class="header-left">
@@ -231,12 +242,12 @@ textarea { resize: vertical; min-height: 70px; }
       <div id="pchips"></div>
     </div>
     <div class="tabs-bar" id="tabsbar">
-      <button class="tab-btn active" onclick="go('generer')">&#10022; G&#233;n&#233;rer</button>
+      <button class="tab-btn active" onclick="go('generer')">&#10022; G&eacute;n&eacute;rer</button>
       <button class="tab-btn" onclick="go('archives')">&#9647; Archives</button>
-      <button class="tab-btn" onclick="go('parametrage')">&#9881; Param&#233;trage</button>
+      <button class="tab-btn" onclick="go('parametrage')">&#9881; Param&eacute;trage</button>
     </div>
   </div>
-  <div id="main"><div class="loading"><div class="spinner"></div> Chargement&#8230;</div></div>
+  <div id="main"><div class="loading"><div class="spinner"></div>&nbsp;Chargement&hellip;</div></div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -251,7 +262,7 @@ textarea { resize: vertical; min-height: 70px; }
     </div>
     <div class="modal-actions">
       <button class="btn btn-ghost btn-full" onclick="closeModal('modal-add')">Annuler</button>
-      <button class="btn btn-primary btn-full" onclick="doAddProp()">Cr&#233;er</button>
+      <button class="btn btn-primary btn-full" onclick="doAddProp()">Cr&eacute;er</button>
     </div>
   </div>
 </div>
@@ -259,12 +270,12 @@ textarea { resize: vertical; min-height: 70px; }
 <div class="overlay" id="modal-del" style="display:none">
   <div class="modal">
     <div class="modal-handle"></div>
-    <div class="modal-title">Supprimer cette quittance ?</div>
+    <div class="modal-title">Supprimer cette quittance&nbsp;?</div>
     <div class="del-info" id="del-info"></div>
-    <p style="font-size:.84rem;color:var(--ink-2);line-height:1.6">Les num&#233;ros des quittances restantes seront recalcul&#233;s automatiquement.</p>
+    <p style="font-size:.84rem;color:var(--ink-2);line-height:1.6">Les num&eacute;ros seront recalcul&eacute;s automatiquement.</p>
     <div class="modal-actions">
       <button class="btn btn-ghost btn-full" onclick="closeModal('modal-del')">Annuler</button>
-      <button class="btn btn-danger btn-full" onclick="doDeleteArchive()">Supprimer d&#233;finitivement</button>
+      <button class="btn btn-danger btn-full" onclick="doDeleteArchive()">Supprimer d&eacute;finitivement</button>
     </div>
   </div>
 </div>
@@ -275,7 +286,7 @@ textarea { resize: vertical; min-height: 70px; }
     <div class="modal-title">Envoyer par mail</div>
     <div class="modal-subtitle" id="mail-modal-subtitle"></div>
     <div class="mail-preview" id="mail-preview-block"></div>
-    <div class="notice">&#9888; La pi&#232;ce jointe ne peut pas &#234;tre attach&#233;e automatiquement (limitation iOS/Safari). Le PDF est dans vos Fichiers &#8212; attachez-le depuis l'app Mail.</div>
+    <div class="notice">&#9888; La pi&egrave;ce jointe ne peut pas &ecirc;tre attach&eacute;e automatiquement. Le PDF est dans vos Fichiers.</div>
     <div class="modal-actions">
       <button class="btn btn-ghost btn-full" onclick="closeModal('modal-mail')">Annuler</button>
       <button class="btn btn-blue btn-full" onclick="doOpenMail()">&#9993; Ouvrir dans Mail</button>
@@ -284,147 +295,177 @@ textarea { resize: vertical; min-height: 70px; }
 </div>
 
 <script>
+// ═══════════════ PIN ═══════════════
 const CORRECT_PIN = '1818';
-let pinEntry = '', pinLocked = true, lastEvt = 0;
+let pinEntry = '';
+let pinLocked = true;
 
-function pk(digit, btn) {
+function pinPress(digit) {
   if (pinEntry.length >= 4) return;
   pinEntry += digit;
-  updateDots();
-  if (btn) { btn.classList.add('pressed'); setTimeout(() => btn.classList.remove('pressed'), 150); }
-  if (pinEntry.length === 4) setTimeout(checkPin, 140);
+  updatePinDots();
+  if (pinEntry.length === 4) setTimeout(checkPin, 150);
 }
-function pd() {
+
+function pinDel() {
   if (!pinEntry.length) return;
   pinEntry = pinEntry.slice(0, -1);
-  updateDots();
-  setErr('');
+  updatePinDots();
+  document.getElementById('pin-error').innerHTML = '&nbsp;';
 }
-function updateDots(mode) {
-  for (let i=0;i<4;i++) { const d=document.getElementById('d'+i); d.classList.remove('filled','error'); if(mode==='error')d.classList.add('error'); else if(i<pinEntry.length)d.classList.add('filled'); }
+
+function updatePinDots(mode) {
+  for (let i = 0; i < 4; i++) {
+    const d = document.getElementById('d' + i);
+    if (!d) continue;
+    d.className = 'pin-dot';
+    if (mode === 'error') d.classList.add('error');
+    else if (i < pinEntry.length) d.classList.add('filled');
+  }
 }
-function setErr(msg) { document.getElementById('pin-error').textContent = msg||'\u00a0'; }
+
 function checkPin() {
   if (pinEntry === CORRECT_PIN) {
-    document.getElementById('pin-screen').style.display='none';
-    document.getElementById('app').style.display='block';
-    pinLocked=false; pinEntry=''; updateDots(); initApp();
-  } else { updateDots('error'); setErr('Code incorrect \u2014 r\u00e9essayez'); setTimeout(()=>{pinEntry='';updateDots();setErr('');},1000); }
+    document.getElementById('pin-screen').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    pinLocked = false;
+    pinEntry = '';
+    updatePinDots();
+    initApp();
+  } else {
+    updatePinDots('error');
+    document.getElementById('pin-error').textContent = 'Code incorrect — réessayez';
+    setTimeout(() => {
+      pinEntry = '';
+      updatePinDots();
+      document.getElementById('pin-error').innerHTML = '&nbsp;';
+    }, 1000);
+  }
 }
-function lockApp() { pinLocked=true; pinEntry=''; updateDots(); setErr(''); document.getElementById('app').style.display='none'; document.getElementById('pin-screen').style.display='flex'; }
-document.addEventListener('keydown', e => { if(!pinLocked)return; const fake={classList:{add:()=>{},remove:()=>{}}}; if(e.key>='0'&&e.key<='9')pk(e.key,null); if(e.key==='Backspace')pd(); });
 
-const DB='QuittancesDB6',ST='data';
-let db,state={properties:[],activePropertyId:null},tab='generer',screen='home';
-let delProp=null,delArc=null,pendingMailto='',appInited=false;
+function lockApp() {
+  pinLocked = true;
+  pinEntry = '';
+  updatePinDots();
+  document.getElementById('pin-error').innerHTML = '&nbsp;';
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('pin-screen').style.display = 'flex';
+}
 
-function openDB(){return new Promise((res,rej)=>{const r=indexedDB.open(DB,1);r.onupgradeneeded=e=>{if(!e.target.result.objectStoreNames.contains(ST))e.target.result.createObjectStore(ST)};r.onsuccess=e=>{db=e.target.result;res()};r.onerror=rej});}
-function dbGet(k){return new Promise((res,rej)=>{const r=db.transaction(ST,'readonly').objectStore(ST).get(k);r.onsuccess=()=>res(r.result);r.onerror=rej});}
-function dbSet(k,v){return new Promise((res,rej)=>{const r=db.transaction(ST,'readwrite').objectStore(ST).put(v,k);r.onsuccess=res;r.onerror=rej});}
-async function save(){await dbSet('state',state);}
-async function initApp(){if(appInited){render();return;}appInited=true;await openDB();const saved=await dbGet('state');if(saved)state=saved;render();}
+document.addEventListener('keydown', e => {
+  if (!pinLocked) return;
+  if (e.key >= '0' && e.key <= '9') pinPress(e.key);
+  if (e.key === 'Backspace') pinDel();
+});
 
-function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-function fISO(d){return`${d.getFullYear()}-${p2(d.getMonth()+1)}-${p2(d.getDate())}`;}
-function p2(n){return String(n).padStart(2,'0');}
-function fFR(iso){if(!iso)return'';const p=iso.split('-');return p.length===3?`${p[2]}/${p[1]}/${p[0].slice(2)}`:iso;}
-function fFRlong(iso){if(!iso)return'';const p=iso.split('-');const m=['janvier','f\u00e9vrier','mars','avril','mai','juin','juillet','ao\u00fbt','septembre','octobre','novembre','d\u00e9cembre'];return`${parseInt(p[2])} ${m[parseInt(p[1])-1]} 20${p[0].slice(2)}`;}
-function fmt(v){return parseFloat(v||0).toFixed(2).replace('.',',');}
-function total(p){return(p.loyer||0)+(p.majoration||0)+(p.charges||0)+(p.eau||0)+(p.eclairage||0)+(p.chauffage||0)+(p.taxes_locatives||0)+(p.ordures||0)+(p.ascenseur||0)+(p.prestations||0);}
-function villeOf(adr){if(!adr)return'';const l=(adr||'').split('\n').pop().trim();const m=l.match(/\d{5}\s+(.+)/);return m?m[1]:l;}
-function sanitize(s){return(s||'').toLowerCase().replace(/[^a-z0-9]/g,'_');}
-function toast(msg){const e=document.getElementById('toast');e.textContent=msg;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2800);}
-function getProp(){return state.properties.find(p=>p.id===state.activePropertyId)||null;}
-function nextNum(prop){if(!prop.archives||!prop.archives.length)return 1;return Math.max(...prop.archives.map(a=>a.num_int||1))+1;}
-function nextPeriod(prop){
+// ═══════════════ DB ═══════════════
+const DB = 'QlDB7', ST = 'data';
+let db, state = {properties:[], activePropertyId:null};
+let tab = 'generer', screen = 'home';
+let delProp=null, delArc=null, pendingMailto='', appInited=false;
+
+function openDB() {
+  return new Promise((res,rej) => {
+    const r = indexedDB.open(DB, 1);
+    r.onupgradeneeded = e => { if (!e.target.result.objectStoreNames.contains(ST)) e.target.result.createObjectStore(ST); };
+    r.onsuccess = e => { db = e.target.result; res(); };
+    r.onerror = rej;
+  });
+}
+function dbGet(k) { return new Promise((res,rej) => { const r=db.transaction(ST,'readonly').objectStore(ST).get(k); r.onsuccess=()=>res(r.result); r.onerror=rej; }); }
+function dbSet(k,v) { return new Promise((res,rej) => { const r=db.transaction(ST,'readwrite').objectStore(ST).put(v,k); r.onsuccess=res; r.onerror=rej; }); }
+async function save() { await dbSet('state', state); }
+async function initApp() {
+  if (appInited) { render(); return; }
+  appInited = true;
+  await openDB();
+  const saved = await dbGet('state');
+  if (saved) state = saved;
+  render();
+}
+
+// ═══════════════ UTILS ═══════════════
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function fISO(d) { return `${d.getFullYear()}-${p2(d.getMonth()+1)}-${p2(d.getDate())}`; }
+function p2(n) { return String(n).padStart(2,'0'); }
+function fFR(iso) { if(!iso)return''; const p=iso.split('-'); return p.length===3?`${p[2]}/${p[1]}/${p[0].slice(2)}`:iso; }
+function fFRlong(iso) { if(!iso)return''; const p=iso.split('-'); const m=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']; return `${parseInt(p[2])} ${m[parseInt(p[1])-1]} 20${p[0].slice(2)}`; }
+function fmt(v) { return parseFloat(v||0).toFixed(2).replace('.',','); }
+function total(p) { return (p.loyer||0)+(p.majoration||0)+(p.charges||0)+(p.eau||0)+(p.eclairage||0)+(p.chauffage||0)+(p.taxes_locatives||0)+(p.ordures||0)+(p.ascenseur||0)+(p.prestations||0); }
+function villeOf(adr) { if(!adr)return''; const l=(adr||'').split('\n').pop().trim(); const m=l.match(/\d{5}\s+(.+)/); return m?m[1]:l; }
+function sanitize(s) { return (s||'').toLowerCase().replace(/[^a-z0-9]/g,'_'); }
+function toast(msg) { const e=document.getElementById('toast'); e.textContent=msg; e.classList.add('show'); setTimeout(()=>e.classList.remove('show'),2800); }
+function getProp() { return state.properties.find(p=>p.id===state.activePropertyId)||null; }
+function nextNum(prop) { if(!prop.archives||!prop.archives.length)return 1; return Math.max(...prop.archives.map(a=>a.num_int||1))+1; }
+function nextPeriod(prop) {
   if(prop.archives&&prop.archives.length>0){const last=[...prop.archives].sort((a,b)=>b.period_end.localeCompare(a.period_end))[0];const s=new Date(last.period_end+'T00:00:00');const e=new Date(s);e.setMonth(e.getMonth()+1);return{start:fISO(s),end:fISO(e)};}
   if(prop.last_period_end){const s=new Date(prop.last_period_end+'T00:00:00');const e=new Date(s);e.setMonth(e.getMonth()+1);return{start:fISO(s),end:fISO(e)};}
   const now=new Date();return{start:fISO(new Date(now.getFullYear(),now.getMonth(),1)),end:fISO(new Date(now.getFullYear(),now.getMonth()+1,1))};
 }
-function newProp(name){return{id:'p'+Date.now(),name,proprietaire_nom:'',proprietaire_adresse:'',locataire_nom:'',locataire_prenom:'',locataire_email:'',locataire_civilite:'M.',locataire_adresse:'',logement_adresse:'',loyer:0,majoration:0,charges:0,eau:0,eclairage:0,chauffage:0,taxes_locatives:0,ordures:0,ascenseur:0,prestations:0,signature_img:null,last_period_end:null,archives:[]};}
+function newProp(name) { return {id:'p'+Date.now(),name,proprietaire_nom:'',proprietaire_adresse:'',locataire_nom:'',locataire_prenom:'',locataire_email:'',locataire_civilite:'M.',locataire_adresse:'',logement_adresse:'',loyer:0,majoration:0,charges:0,eau:0,eclairage:0,chauffage:0,taxes_locatives:0,ordures:0,ascenseur:0,prestations:0,signature_img:null,last_period_end:null,archives:[]}; }
 
-function goHome(){screen='home';state.activePropertyId=null;save();render();}
-function selectProp(id){state.activePropertyId=id;screen='property';tab='generer';save();render();}
-function go(t){tab=t;render();}
+// ═══════════════ NAV ═══════════════
+function goHome() { screen='home'; state.activePropertyId=null; save(); render(); }
+function selectProp(id) { state.activePropertyId=id; screen='property'; tab='generer'; save(); render(); }
+function go(t) { tab=t; render(); }
 
-function render(){
-  const main=document.getElementById('main'),propNav=document.getElementById('prop-nav'),hprop=document.getElementById('hprop');
-  if(screen==='home'||!state.activePropertyId){propNav.style.display='none';hprop.className='header-prop empty';hprop.textContent='';renderHome(main);return;}
-  const prop=getProp();if(!prop){screen='home';render();return;}
+// ═══════════════ RENDER ═══════════════
+function render() {
+  const main=document.getElementById('main'), propNav=document.getElementById('prop-nav'), hprop=document.getElementById('hprop');
+  if (screen==='home'||!state.activePropertyId) { propNav.style.display='none'; hprop.className='header-prop empty'; hprop.textContent=''; renderHome(main); return; }
+  const prop=getProp(); if(!prop){screen='home';render();return;}
   propNav.style.display='block';
-  const chips=document.getElementById('pchips');chips.innerHTML='';
-  state.properties.forEach(p=>{const c=document.createElement('button');c.className='chip'+(p.id===state.activePropertyId?' active':'');c.textContent=p.name;c.onclick=()=>selectProp(p.id);chips.appendChild(c);});
-  const ac=document.createElement('button');ac.className='chip add';ac.textContent='+ Ajouter';ac.onclick=()=>openModal('modal-add');chips.appendChild(ac);
+  const chips=document.getElementById('pchips'); chips.innerHTML='';
+  state.properties.forEach(p=>{ const c=document.createElement('button'); c.className='chip'+(p.id===state.activePropertyId?' active':''); c.textContent=p.name; c.onclick=()=>selectProp(p.id); chips.appendChild(c); });
+  const ac=document.createElement('button'); ac.className='chip add'; ac.textContent='+ Ajouter'; ac.onclick=()=>openModal('modal-add'); chips.appendChild(ac);
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  const tabMap={generer:0,archives:1,parametrage:2};
-  document.querySelectorAll('.tab-btn')[tabMap[tab]]?.classList.add('active');
-  hprop.className='header-prop';hprop.innerHTML=`&#8962; &nbsp;${esc(prop.name)}`;
-  if(tab==='generer')renderGenerer(main,prop);
-  else if(tab==='archives')renderArchives(main,prop);
-  else renderParam(main,prop);
+  const tabMap={generer:0,archives:1,parametrage:2}; document.querySelectorAll('.tab-btn')[tabMap[tab]]?.classList.add('active');
+  hprop.className='header-prop'; hprop.innerHTML=`&#8962; &nbsp;${esc(prop.name)}`;
+  if(tab==='generer')renderGenerer(main,prop); else if(tab==='archives')renderArchives(main,prop); else renderParam(main,prop);
 }
 
-function renderHome(el){
+function renderHome(el) {
   const props=state.properties;
-  el.innerHTML=`<div class="home-screen">
-    <div class="home-title">Mes logements</div>
-    <div class="home-subtitle">${props.length===0?'Aucun logement pour l'instant':`${props.length} logement${props.length>1?'s':''} configur\u00e9${props.length>1?'s':''}`}</div>
-    <div class="prop-grid">
-      ${props.map(p=>{const n=(p.archives||[]).length;return`<div class="prop-card" onclick="selectProp('${p.id}')"><div class="prop-card-icon">\uD83C\uDFE0</div><div class="prop-card-name">${esc(p.name)}</div><div class="prop-card-meta">${n} quittance${n!==1?'s':''} &middot; ${fmt(total(p))} &euro;/mois</div></div>`;}).join('')}
-      <div class="prop-card prop-card-add" onclick="openModal('modal-add')"><div class="add-icon">+</div><span>Ajouter un logement</span></div>
-    </div>
-  </div>`;
+  el.innerHTML=`<div class="home-screen"><div class="home-title">Mes logements</div><div class="home-subtitle">${props.length===0?'Aucun logement pour l\'instant':`${props.length} logement${props.length>1?'s':''} configuré${props.length>1?'s':''}`}</div><div class="prop-grid">${props.map(p=>{const n=(p.archives||[]).length;return`<div class="prop-card" onclick="selectProp('${p.id}')"><div class="prop-card-icon">🏠</div><div class="prop-card-name">${esc(p.name)}</div><div class="prop-card-meta">${n} quittance${n!==1?'s':''} &middot; ${fmt(total(p))} &euro;/mois</div></div>`;}  ).join('')}<div class="prop-card prop-card-add" onclick="openModal('modal-add')"><div class="add-icon">+</div><span>Ajouter un logement</span></div></div></div>`;
 }
 
-function renderParam(el,prop){
-  el.innerHTML=`
-  <div class="sec-hdr"><div class="sec-title">Param&#233;trage</div><button class="btn btn-ghost btn-sm" onclick="deleteProp('${prop.id}')">&#x1F5D1; Supprimer</button></div>
-  <div class="card"><div class="card-title">Propri&#233;taire</div><div class="fg c1">
-    <div class="field"><label>Nom complet</label><input type="text" id="p_nom" value="${esc(prop.proprietaire_nom)}" placeholder="Jean-Fran&#231;ois VINOT"></div>
+function renderParam(el,prop) {
+  el.innerHTML=`<div class="sec-hdr"><div class="sec-title">Param&eacute;trage</div><button class="btn btn-ghost btn-sm" onclick="deleteProp('${prop.id}')">&#x1F5D1; Supprimer</button></div>
+  <div class="card"><div class="card-title">Propri&eacute;taire</div><div class="fg c1">
+    <div class="field"><label>Nom complet</label><input type="text" id="p_nom" value="${esc(prop.proprietaire_nom)}" placeholder="Jean-Fran&ccedil;ois VINOT"></div>
     <div class="field"><label>Adresse</label><textarea id="p_adr" rows="2" placeholder="11 bis chemin du Tot&#10;46030 Octeville-sur-Mer">${esc(prop.proprietaire_adresse)}</textarea></div>
   </div></div>
   <div class="card"><div class="card-title">Locataire</div><div class="fg">
-    <div class="field"><label>Civilit&#233;</label>
-      <select id="p_civ">
-        <option value="M." ${(prop.locataire_civilite||'M.')==='M.'?'selected':''}>M.</option>
-        <option value="Mme" ${prop.locataire_civilite==='Mme'?'selected':''}>Mme</option>
-        <option value="M. et Mme" ${prop.locataire_civilite==='M. et Mme'?'selected':''}>M. et Mme</option>
-      </select>
-    </div>
-    <div class="field"><label>Pr&#233;nom</label><input type="text" id="p_lpr" value="${esc(prop.locataire_prenom)}" placeholder="C&#233;dric"></div>
+    <div class="field"><label>Civilit&eacute;</label><select id="p_civ"><option value="M." ${(prop.locataire_civilite||'M.')==='M.'?'selected':''}>M.</option><option value="Mme" ${prop.locataire_civilite==='Mme'?'selected':''}>Mme</option><option value="M. et Mme" ${prop.locataire_civilite==='M. et Mme'?'selected':''}>M. et Mme</option></select></div>
+    <div class="field"><label>Pr&eacute;nom</label><input type="text" id="p_lpr" value="${esc(prop.locataire_prenom)}" placeholder="C&eacute;dric"></div>
     <div class="field s2"><label>Nom</label><input type="text" id="p_lno" value="${esc(prop.locataire_nom)}" placeholder="FLEURET"></div>
     <div class="field s2"><label>Adresse e-mail</label><input type="email" id="p_eml" value="${esc(prop.locataire_email||'')}" placeholder="cedric@email.com" inputmode="email"></div>
     <div class="field s2"><label>Adresse du locataire</label><textarea id="p_loc_adr" rows="2" placeholder="6 Rue Cornelin&#10;76600 Le Havre">${esc(prop.locataire_adresse||'')}</textarea></div>
-    <div class="field s2"><label>Adresse du logement lou&#233;</label><input type="text" id="p_ladr" value="${esc(prop.logement_adresse)}" placeholder="6 Rue Cornelin, Le Havre"></div>
+    <div class="field s2"><label>Adresse du logement lou&eacute;</label><input type="text" id="p_ladr" value="${esc(prop.logement_adresse)}" placeholder="6 Rue Cornelin, Le Havre"></div>
   </div></div>
-  <div class="card"><div class="card-title">Montants mensuels (&#8364;)</div>
-    <table class="amt-table">
-      ${[['Loyer nu','loyer'],['Majoration','majoration'],['Charges','charges'],['Eau','eau'],['\u00c9clairage','eclairage'],['Chauffage','chauffage'],['Taxes locatives','taxes_locatives'],['Ordures m\u00e9nag\u00e8res','ordures'],['Ascenseur','ascenseur'],['Prestations','prestations']].map(([l,k])=>`<tr><td>${l}</td><td><input type="number" id="p_${k}" value="${prop[k]||0}" min="0" step="0.01" inputmode="decimal"></td></tr>`).join('')}
-      <tr class="tot"><td>Total</td><td id="p_tot" style="text-align:right;color:var(--accent)">${fmt(total(prop))} &#8364;</td></tr>
-    </table>
-  </div>
-  <div class="card"><div class="card-title">P&#233;riode de d&#233;part</div>
-    <div class="notice">Renseignez uniquement lors de la premi&#232;re configuration.</div>
-    <div class="field"><label>Date de fin de la premi&#232;re p&#233;riode (optionnel)</label>
-      <input type="date" id="p_lpe" value="${prop.last_period_end||''}">
-      <span class="hint">Ex : 2026-04-01 si votre premier loyer couvrait mars 2026.</span>
-    </div>
+  <div class="card"><div class="card-title">Montants mensuels (&euro;)</div><table class="amt-table">
+    ${[['Loyer nu','loyer'],['Majoration','majoration'],['Charges','charges'],['Eau','eau'],['Éclairage','eclairage'],['Chauffage','chauffage'],['Taxes locatives','taxes_locatives'],['Ordures ménagères','ordures'],['Ascenseur','ascenseur'],['Prestations','prestations']].map(([l,k])=>`<tr><td>${l}</td><td><input type="number" id="p_${k}" value="${prop[k]||0}" min="0" step="0.01" inputmode="decimal"></td></tr>`).join('')}
+    <tr class="tot"><td>Total</td><td id="p_tot" style="text-align:right;color:var(--accent)">${fmt(total(prop))} &euro;</td></tr>
+  </table></div>
+  <div class="card"><div class="card-title">P&eacute;riode de d&eacute;part</div>
+    <div class="notice">Renseignez uniquement lors de la premi&egrave;re configuration.</div>
+    <div class="field"><label>Date de fin de la premi&egrave;re p&eacute;riode (optionnel)</label><input type="date" id="p_lpe" value="${prop.last_period_end||''}"><span class="hint">Ex : 2026-04-01 si votre premier loyer couvrait mars 2026.</span></div>
   </div>
   <div class="card"><div class="card-title">Signature</div>
     <div class="field"><label>Image de signature</label>
       <div class="sig-box" onclick="document.getElementById('sig-inp').click()" id="sig-prv">
-        ${prop.signature_img?`<div style="text-align:center"><img src="${prop.signature_img}" style="image-orientation:none;-webkit-transform:none;transform:none"><br><small style="color:var(--ink-3);font-size:.72rem;display:block;margin-top:.3rem">Appuyer pour remplacer</small></div>`:`<div style="color:var(--ink-3);font-size:.85rem;text-align:center"><strong style="display:block;color:var(--ink-2);margin-bottom:.2rem">Appuyer pour importer</strong>JPG ou PNG</div>`}
+        ${prop.signature_img?`<div style="text-align:center"><img src="${prop.signature_img}" style="max-height:70px;max-width:200px;object-fit:contain"><br><small style="color:var(--ink-3);font-size:.72rem;display:block;margin-top:.3rem">Appuyer pour remplacer</small></div>`:`<div style="color:var(--ink-3);font-size:.85rem;text-align:center"><strong style="display:block;color:var(--ink-2);margin-bottom:.2rem">Appuyer pour importer</strong>JPG ou PNG</div>`}
       </div>
       <input type="file" id="sig-inp" accept="image/*" style="display:none" onchange="uploadSig(event,'${prop.id}')">
     </div>
   </div>
-  <button class="btn btn-primary btn-full" style="margin-top:.25rem" onclick="saveParam('${prop.id}')">Enregistrer les param&#232;tres</button>`;
+  <button class="btn btn-primary btn-full" style="margin-top:.25rem" onclick="saveParam('${prop.id}')">Enregistrer les param&egrave;tres</button>`;
   const keys=['loyer','majoration','charges','eau','eclairage','chauffage','taxes_locatives','ordures','ascenseur','prestations'];
-  keys.forEach(k=>{document.getElementById('p_'+k)?.addEventListener('input',()=>{const t=keys.reduce((s,kk)=>s+parseFloat(document.getElementById('p_'+kk)?.value||0),0);const e=document.getElementById('p_tot');if(e)e.textContent=fmt(t)+' \u20ac';});});
+  keys.forEach(k=>{ document.getElementById('p_'+k)?.addEventListener('input',()=>{ const t=keys.reduce((s,kk)=>s+parseFloat(document.getElementById('p_'+kk)?.value||0),0); const e=document.getElementById('p_tot'); if(e)e.textContent=fmt(t)+' €'; }); });
 }
 
-async function saveParam(pid){
-  const prop=state.properties.find(p=>p.id===pid);if(!prop)return;
+async function saveParam(pid) {
+  const prop=state.properties.find(p=>p.id===pid); if(!prop)return;
   prop.proprietaire_nom=document.getElementById('p_nom').value.trim();
   prop.proprietaire_adresse=document.getElementById('p_adr').value.trim();
   prop.locataire_civilite=document.getElementById('p_civ').value;
@@ -433,197 +474,160 @@ async function saveParam(pid){
   prop.locataire_email=document.getElementById('p_eml').value.trim();
   prop.locataire_adresse=document.getElementById('p_loc_adr').value.trim();
   prop.logement_adresse=document.getElementById('p_ladr').value.trim();
-  ['loyer','majoration','charges','eau','eclairage','chauffage','taxes_locatives','ordures','ascenseur','prestations'].forEach(k=>{prop[k]=parseFloat(document.getElementById('p_'+k)?.value||0);});
+  ['loyer','majoration','charges','eau','eclairage','chauffage','taxes_locatives','ordures','ascenseur','prestations'].forEach(k=>{ prop[k]=parseFloat(document.getElementById('p_'+k)?.value||0); });
   prop.last_period_end=document.getElementById('p_lpe').value||null;
-  await save();toast('Param\u00e8tres enregistr\u00e9s \u2713');
+  await save(); toast('Paramètres enregistrés ✓');
 }
 
-function uploadSig(ev,pid){
-  const f=ev.target.files[0];if(!f)return;
+function uploadSig(ev,pid) {
+  const f=ev.target.files[0]; if(!f)return;
   const reader=new FileReader();
   reader.onload=async e=>{
-    const prop=state.properties.find(p=>p.id===pid);if(!prop)return;
-    // FIX signature rotation: strip EXIF by redrawing on canvas
     const img=new Image();
     img.onload=async()=>{
-      const canvas=document.createElement('canvas');
-      canvas.width=img.naturalWidth;canvas.height=img.naturalHeight;
-      const ctx=canvas.getContext('2d');
-      ctx.drawImage(img,0,0);
-      prop.signature_img=canvas.toDataURL('image/png');
-      await save();
+      const canvas=document.createElement('canvas'); canvas.width=img.naturalWidth; canvas.height=img.naturalHeight;
+      canvas.getContext('2d').drawImage(img,0,0);
+      const prop=state.properties.find(p=>p.id===pid); if(!prop)return;
+      prop.signature_img=canvas.toDataURL('image/png'); await save();
       const prv=document.getElementById('sig-prv');
-      if(prv)prv.innerHTML=`<div style="text-align:center"><img src="${prop.signature_img}" style="max-height:70px;max-width:200px;object-fit:contain"><br><small style="color:var(--ink-3);font-size:.72rem;display:block;margin-top:.3rem">Appuyer pour remplacer</small></div>`;
-      toast('Signature import\u00e9e \u2713');
+      if(prv) prv.innerHTML=`<div style="text-align:center"><img src="${prop.signature_img}" style="max-height:70px;max-width:200px;object-fit:contain"><br><small style="color:var(--ink-3);font-size:.72rem;display:block;margin-top:.3rem">Appuyer pour remplacer</small></div>`;
+      toast('Signature importée ✓');
     };
     img.src=e.target.result;
-  };reader.readAsDataURL(f);
+  };
+  reader.readAsDataURL(f);
 }
 
-async function deleteProp(pid){if(!confirm('Supprimer ce logement et toutes ses archives ?'))return;state.properties=state.properties.filter(p=>p.id!==pid);state.activePropertyId=null;screen='home';await save();render();toast('Logement supprim\u00e9');}
+async function deleteProp(pid) { if(!confirm('Supprimer ce logement et toutes ses archives ?'))return; state.properties=state.properties.filter(p=>p.id!==pid); state.activePropertyId=null; screen='home'; await save(); render(); toast('Logement supprimé'); }
 
-function renderGenerer(el,prop){
-  const per=nextPeriod(prop),tot=total(prop),num=nextNum(prop),today=fISO(new Date());
-  const civ=prop.locataire_civilite||'M.';
-  el.innerHTML=`
-  <div class="sec-hdr"><div class="sec-title">G&#233;n&#233;rer une quittance</div></div>
-  <div class="gen-box"><strong>Quittance n&#176; ${p2(num)}</strong> &middot; ${esc(civ)} ${esc(prop.locataire_prenom)} ${esc(prop.locataire_nom)}<br>P&#233;riode pr&#233;vue : ${fFR(per.start)} &#8594; ${fFR(per.end)}<br>Total : <strong>${fmt(tot)} &#8364;</strong></div>
-  <div class="card"><div class="card-title">P&#233;riode &amp; date de signature</div>
+function renderGenerer(el,prop) {
+  const per=nextPeriod(prop),tot=total(prop),num=nextNum(prop),today=fISO(new Date()),civ=prop.locataire_civilite||'M.';
+  el.innerHTML=`<div class="sec-hdr"><div class="sec-title">G&eacute;n&eacute;rer une quittance</div></div>
+  <div class="gen-box"><strong>Quittance n&deg; ${p2(num)}</strong> &middot; ${esc(civ)} ${esc(prop.locataire_prenom)} ${esc(prop.locataire_nom)}<br>P&eacute;riode : ${fFR(per.start)} &rarr; ${fFR(per.end)}<br>Total : <strong>${fmt(tot)} &euro;</strong></div>
+  <div class="card"><div class="card-title">P&eacute;riode &amp; date de signature</div>
     <div class="fg c3">
-      <div class="field"><label>D&#233;but</label><input type="date" id="g_s" value="${per.start}"></div>
+      <div class="field"><label>D&eacute;but</label><input type="date" id="g_s" value="${per.start}"></div>
       <div class="field"><label>Fin</label><input type="date" id="g_e" value="${per.end}"></div>
-      <div class="field"><label>Sign&#233;e le</label><input type="date" id="g_d" value="${today}"></div>
+      <div class="field"><label>Sign&eacute;e le</label><input type="date" id="g_d" value="${today}"></div>
     </div>
   </div>
-  <button class="btn-generate" onclick="doGenerate('${prop.id}')">&#10022; G&#233;n&#233;rer et t&#233;l&#233;charger en PDF</button>
+  <button class="btn-generate" onclick="doGenerate('${prop.id}')">&#10022; G&eacute;n&eacute;rer et t&eacute;l&eacute;charger en PDF</button>
   <div style="margin-top:1.5rem;margin-bottom:1rem">
-    <div style="font-size:.72rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:.5rem">Aper&#231;u de la quittance</div>
+    <div style="font-size:.72rem;color:var(--ink-3);text-transform:uppercase;letter-spacing:.07em;font-weight:600;margin-bottom:.5rem">Aper&ccedil;u</div>
     <div id="prev"></div>
   </div>`;
   setTimeout(()=>refreshPreview(prop),30);
   ['g_s','g_e','g_d'].forEach(id=>document.getElementById(id)?.addEventListener('change',()=>refreshPreview(getProp())));
 }
 
-function refreshPreview(prop){if(!prop)return;const area=document.getElementById('prev');if(!area)return;area.innerHTML=buildQDoc(prop);}
+function refreshPreview(prop) { if(!prop)return; const a=document.getElementById('prev'); if(!a)return; a.innerHTML=buildQDoc(prop); }
 
-function buildQDoc(prop){
+function buildQDoc(prop) {
   const s=document.getElementById('g_s')?.value||fISO(new Date());
   const e=document.getElementById('g_e')?.value||fISO(new Date());
   const d=document.getElementById('g_d')?.value||fISO(new Date());
-  const num=p2(nextNum(prop)),tot=total(prop),v=villeOf(prop.proprietaire_adresse);
-  const civ=prop.locataire_civilite||'M.';
-  const rows=[['Loyer',prop.loyer],['Majoration',prop.majoration],['Charges',prop.charges],['Eau',prop.eau],['\u00c9clairage',prop.eclairage],['Chauffage',prop.chauffage],['Taxes locatives',prop.taxes_locatives],['Ordures m\u00e9nag\u00e8res',prop.ordures],['Ascenseur',prop.ascenseur],['Prestations',prop.prestations]];
-  const sig=prop.signature_img?`<img src="${prop.signature_img}" style="max-height:50px;max-width:130px;display:block;image-orientation:none;transform:none;-webkit-transform:none;">`:`<div style="width:130px;border-bottom:1px solid #333;height:28px;"></div>`;
-  return`<div class="qdoc">
-    <div class="qh"><div class="qprop"><strong>${esc(prop.proprietaire_nom)}</strong><br>${(prop.proprietaire_adresse||'').split('\n').map(esc).join('<br>')}</div>
-    <div class="qtitle-block"><div class="qtitle">Quittance de loyer</div><div class="qnum">N&#176; ${num}</div></div></div>
-    <table class="qtab"><thead><tr><th style="width:60%">D&#233;signation</th><th>Montant (&#8364;)</th></tr></thead>
-    <tbody>${rows.map(([l,v2])=>`<tr><td>${l}</td><td>${fmt(v2)}</td></tr>`).join('')}</tbody>
-    <tfoot><tr class="tot-r"><td><strong>Total</strong></td><td><strong>${fmt(tot)}</strong></td></tr></tfoot></table>
-    <div class="qbody">Re&#231;u de ${esc(civ)} <strong>${esc(prop.locataire_prenom)} ${esc(prop.locataire_nom)}</strong>,<br>au titre du paiement du loyer et des charges du logement/local sis<br>&#224; <strong>${esc(prop.logement_adresse)}</strong>,<br>pour la p&#233;riode du <strong>${fFR(s)}</strong> au <strong>${fFR(e)}</strong>,<br>la somme de <strong>${fmt(tot)} &#8364;</strong>.</div>
-    <div class="qres">Dont quittance, et sous r&#233;serve de tous mes droits.</div>
-    <div class="qfooter"><div>A ${esc(v)},<br>le ${fFR(d)}</div><div style="text-align:right"><div style="color:#666;font-size:9.5px;margin-bottom:3px">Signature :</div>${sig}</div></div>
-  </div>`;
+  const num=p2(nextNum(prop)),tot=total(prop),v=villeOf(prop.proprietaire_adresse),civ=prop.locataire_civilite||'M.';
+  const rows=[['Loyer',prop.loyer],['Majoration',prop.majoration],['Charges',prop.charges],['Eau',prop.eau],['Éclairage',prop.eclairage],['Chauffage',prop.chauffage],['Taxes locatives',prop.taxes_locatives],['Ordures ménagères',prop.ordures],['Ascenseur',prop.ascenseur],['Prestations',prop.prestations]];
+  const sig=prop.signature_img?`<img src="${prop.signature_img}" style="max-height:50px;max-width:130px;display:block;">`:`<div style="width:130px;border-bottom:1px solid #333;height:28px;"></div>`;
+  return `<div class="qdoc"><div class="qh"><div class="qprop"><strong>${esc(prop.proprietaire_nom)}</strong><br>${(prop.proprietaire_adresse||'').split('\n').map(esc).join('<br>')}</div><div class="qtitle-block"><div class="qtitle">Quittance de loyer</div><div class="qnum">N&deg; ${num}</div></div></div>
+  <table class="qtab"><thead><tr><th style="width:60%">Désignation</th><th>Montant (€)</th></tr></thead><tbody>${rows.map(([l,v2])=>`<tr><td>${l}</td><td>${fmt(v2)}</td></tr>`).join('')}</tbody><tfoot><tr class="tot-r"><td><strong>Total</strong></td><td><strong>${fmt(tot)}</strong></td></tr></tfoot></table>
+  <div class="qbody">Reçu de ${esc(civ)} <strong>${esc(prop.locataire_prenom)} ${esc(prop.locataire_nom)}</strong>,<br>au titre du paiement du loyer et des charges du logement/local sis<br>à <strong>${esc(prop.logement_adresse)}</strong>,<br>pour la période du <strong>${fFR(s)}</strong> au <strong>${fFR(e)}</strong>,<br>la somme de <strong>${fmt(tot)} €</strong>.</div>
+  <div class="qres">Dont quittance, et sous réserve de tous mes droits.</div>
+  <div class="qfooter"><div>A ${esc(v)},<br>le ${fFR(d)}</div><div style="text-align:right"><div style="color:#666;font-size:9.5px;margin-bottom:3px">Signature :</div>${sig}</div></div></div>`;
 }
 
-async function doGenerate(pid){
-  const prop=state.properties.find(p=>p.id===pid);if(!prop)return;
-  if(!prop.proprietaire_nom||!prop.locataire_nom||!prop.logement_adresse){toast('\u26a0 Compl\u00e9tez le param\u00e9trage d\'abord');return;}
+async function doGenerate(pid) {
+  const prop=state.properties.find(p=>p.id===pid); if(!prop)return;
+  if(!prop.proprietaire_nom||!prop.locataire_nom||!prop.logement_adresse){toast('⚠ Complétez le paramétrage d\'abord');return;}
   const s=document.getElementById('g_s').value,e=document.getElementById('g_e').value,d=document.getElementById('g_d').value;
   const tot=total(prop),num=nextNum(prop),numStr=p2(num);
   const arc={id:'a'+Date.now(),numero:numStr,num_int:num,date_generation:d,period_start:s,period_end:e,total:tot,locataire:`${prop.locataire_prenom} ${prop.locataire_nom}`,civilite:prop.locataire_civilite||'M.'};
   if(!prop.archives)prop.archives=[];
-  prop.archives.push(arc);prop.archives.sort((a,b)=>a.period_start.localeCompare(b.period_start));
-  await save();buildPDF(prop,arc);tab='archives';render();
+  prop.archives.push(arc); prop.archives.sort((a,b)=>a.period_start.localeCompare(b.period_start));
+  await save(); buildPDF(prop,arc); tab='archives'; render();
   setTimeout(()=>showMailBanner(prop,arc),80);
 }
 
-function showMailBanner(prop,arc){
-  const main=document.getElementById('main');if(!main)return;
-  const banner=document.createElement('div');banner.className='mail-banner';
+function showMailBanner(prop,arc) {
+  const main=document.getElementById('main'); if(!main)return;
+  const banner=document.createElement('div'); banner.className='mail-banner';
   const hasEmail=!!prop.locataire_email;
-  banner.innerHTML=`<div class="mail-banner-title">&#10003; Quittance n&#176; ${arc.numero} g&#233;n&#233;r&#233;e et t&#233;l&#233;charg&#233;e</div>
-    ${hasEmail?`<p>Envoyer &#224; <strong>${esc(prop.locataire_email)}</strong> ?</p>
-      <div style="margin-top:.75rem"><button class="btn btn-blue" onclick="openMailModal('${prop.id}','${arc.id}');this.closest('.mail-banner').remove()">&#9993; Pr&#233;parer le mail</button></div>
-      <div class="attach-tip"><strong>&#128206; Attacher le PDF dans Mail :</strong>Maintenez le doigt &#8594; "Ins&#233;rer pi&#232;ce jointe" &#8594; choisissez le PDF.</div>`
-    :`<p>Ajoutez l'e-mail du locataire dans les <button class="btn btn-ghost btn-sm" style="display:inline-flex;padding:.2rem .6rem" onclick="go('parametrage')">param\u00e8tres</button> pour envoyer par mail.</p>`}`;
+  banner.innerHTML=`<div class="mail-banner-title">✓ Quittance n° ${arc.numero} générée et téléchargée</div>${hasEmail?`<p>Envoyer à <strong>${esc(prop.locataire_email)}</strong>&nbsp;?</p><div style="margin-top:.75rem"><button class="btn btn-blue" onclick="openMailModal('${prop.id}','${arc.id}');this.closest('.mail-banner').remove()">✉ Préparer le mail</button></div><div class="attach-tip"><strong>?? Attacher le PDF dans Mail :</strong>Maintenez le doigt → "Insérer pièce jointe".</div>`:`<p>Ajoutez l'e-mail dans les <button class="btn btn-ghost btn-sm" style="display:inline-flex;padding:.2rem .6rem" onclick="go('parametrage')">paramètres</button>.</p>`}`;
   main.insertBefore(banner,main.firstChild);
 }
 
-function buildPDF(prop,arc){
-  const{jsPDF}=window.jspdf;const doc=new jsPDF({unit:'mm',format:'a5',orientation:'portrait'});
-  const v=villeOf(prop.proprietaire_adresse);
-  const civ=arc.civilite||prop.locataire_civilite||'M.';
+function buildPDF(prop,arc) {
+  const{jsPDF}=window.jspdf;
+  const doc=new jsPDF({unit:'mm',format:'a5',orientation:'portrait'});
+  const v=villeOf(prop.proprietaire_adresse),civ=arc.civilite||prop.locataire_civilite||'M.';
   let y=14;
-  doc.setFont('helvetica');doc.setFontSize(9);doc.setTextColor(80,80,80);
-  doc.text(prop.proprietaire_nom||'',14,y);y+=4;
+  doc.setFont('helvetica'); doc.setFontSize(9); doc.setTextColor(80,80,80);
+  doc.text(prop.proprietaire_nom||'',14,y); y+=4;
   (prop.proprietaire_adresse||'').split('\n').forEach(l=>{doc.text(l,14,y);y+=4;});
   doc.setFontSize(15);doc.setFont('helvetica','bold');doc.setTextColor(26,110,58);
   doc.text('QUITTANCE DE LOYER',143,14,{align:'right'});
   doc.setFontSize(9);doc.setFont('helvetica','normal');doc.setTextColor(60,60,60);
-  doc.text(`N\u00b0 ${arc.numero}`,143,21,{align:'right'});
+  doc.text('N° '+arc.numero,143,21,{align:'right'});
   y=Math.max(y,28)+4;
   doc.setFillColor(240,240,240);doc.rect(14,y,134,7,'F');
   doc.setFontSize(8);doc.setFont('helvetica','bold');doc.setTextColor(40,40,40);
-  doc.text('D\u00e9signation',16,y+5);doc.text('Montant (\u20ac)',144,y+5,{align:'right'});y+=7;
-  const rows=[['Loyer',prop.loyer],['Majoration',prop.majoration],['Charges',prop.charges],['Eau',prop.eau],['\u00c9clairage',prop.eclairage],['Chauffage',prop.chauffage],['Taxes locatives',prop.taxes_locatives],['Ordures m\u00e9nag\u00e8res',prop.ordures],['Ascenseur',prop.ascenseur],['Prestations',prop.prestations]];
+  doc.text('Désignation',16,y+5);doc.text('Montant (€)',144,y+5,{align:'right'});y+=7;
+  const rows=[['Loyer',prop.loyer],['Majoration',prop.majoration],['Charges',prop.charges],['Eau',prop.eau],['Éclairage',prop.eclairage],['Chauffage',prop.chauffage],['Taxes locatives',prop.taxes_locatives],['Ordures ménagères',prop.ordures],['Ascenseur',prop.ascenseur],['Prestations',prop.prestations]];
   doc.setFont('helvetica','normal');doc.setFontSize(8);
   rows.forEach(([l,v2])=>{doc.setDrawColor(210,210,210);doc.setLineWidth(0.2);doc.line(14,y,148,y);doc.setTextColor(60,60,60);doc.text(l,16,y+5);doc.text(fmt(v2),144,y+5,{align:'right'});y+=7;});
   doc.setDrawColor(140,140,140);doc.setLineWidth(0.5);doc.line(14,y,148,y);doc.setLineWidth(0.2);
-  doc.setFont('helvetica','bold');doc.setFontSize(9);doc.text('Total',16,y+6);doc.text(fmt(arc.total)+' \u20ac',144,y+6,{align:'right'});y+=12;
+  doc.setFont('helvetica','bold');doc.setFontSize(9);doc.text('Total',16,y+6);doc.text(fmt(arc.total)+' €',144,y+6,{align:'right'});y+=12;
   doc.setDrawColor(200,200,200);doc.rect(14,y,134,40);
   doc.setFont('helvetica','normal');doc.setFontSize(8.5);doc.setTextColor(30,30,30);let by=y+7;
-  [`Re\u00e7u de ${civ} ${prop.locataire_prenom} ${prop.locataire_nom},`,`au titre du paiement du loyer et des charges du logement/local sis`,`\u00e0 ${prop.logement_adresse},`,`pour la p\u00e9riode du ${fFR(arc.period_start)} au ${fFR(arc.period_end)},`,`la somme de ${fmt(arc.total)} \u20ac.`].forEach(l=>{doc.text(l,16,by);by+=6;});
+  ['Reçu de '+civ+' '+prop.locataire_prenom+' '+prop.locataire_nom+',','au titre du paiement du loyer et des charges du logement/local sis','à '+prop.logement_adresse+',','pour la période du '+fFR(arc.period_start)+' au '+fFR(arc.period_end)+',','la somme de '+fmt(arc.total)+' €.'].forEach(l=>{doc.text(l,16,by);by+=6;});
   y+=45;
-  doc.setFontSize(7.5);doc.setTextColor(100,100,100);doc.setFont('helvetica','italic');doc.text('Dont quittance, et sous r\u00e9serve de tous mes droits.',14,y);y+=10;
+  doc.setFontSize(7.5);doc.setTextColor(100,100,100);doc.setFont('helvetica','italic');doc.text('Dont quittance, et sous réserve de tous mes droits.',14,y);y+=10;
   doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(60,60,60);
-  doc.text(`A ${v},`,14,y);doc.text(`le ${fFR(arc.date_generation)}`,14,y+5);
-  doc.text('Signature :',105,y);
-  if(prop.signature_img){
-    try{
-      // FIX rotation: draw via canvas to strip EXIF orientation
-      doc.addImage(prop.signature_img,'PNG',103,y+3,38,18,'','FAST');
-    }catch(err){doc.line(103,y+22,148,y+22);}
-  }else{doc.line(103,y+22,148,y+22);}
-  doc.save(`quittance_${sanitize(prop.name)}_${arc.period_start}_n${arc.numero}.pdf`);
+  doc.text('A '+v+',',14,y);doc.text('le '+fFR(arc.date_generation),14,y+5);doc.text('Signature :',105,y);
+  if(prop.signature_img){try{doc.addImage(prop.signature_img,'PNG',103,y+3,38,18,'','FAST');}catch(err){doc.line(103,y+22,148,y+22);}}
+  else{doc.line(103,y+22,148,y+22);}
+  doc.save('quittance_'+sanitize(prop.name)+'_'+arc.period_start+'_n'+arc.numero+'.pdf');
 }
 
-function renderArchives(el,prop){
+function renderArchives(el,prop) {
   const arcs=[...(prop.archives||[])].sort((a,b)=>a.period_start.localeCompare(b.period_start));
-  el.innerHTML=`<div class="sec-hdr"><div class="sec-title">Archives</div><span style="font-size:.82rem;color:var(--ink-3)">${arcs.length} quittance${arcs.length!==1?'s':''}</span></div>
-  ${arcs.length===0?`<div class="empty-state" style="padding:3rem 1rem"><div class="icon">&#128196;</div><h2>Aucune archive</h2><p>Les quittances g\u00e9n\u00e9r\u00e9es appara&#238;tront ici.</p></div>`
-  :arcs.map(a=>`<div class="arc-item">
-    <div class="arc-badge">N&#176; ${a.numero}</div>
-    <div class="arc-info"><div class="arc-tenant">${esc(a.locataire)}</div><div class="arc-period">${fFR(a.period_start)} &#8594; ${fFR(a.period_end)} <span style="color:var(--ink-4)">&middot; ${fFR(a.date_generation)}</span></div></div>
-    <div class="arc-amount">${fmt(a.total)} &#8364;</div>
-    <div class="arc-actions">
-      <button class="btn btn-ghost btn-sm" onclick="rePDF('${prop.id}','${a.id}')" title="PDF">&#8595;</button>
-      <button class="btn btn-ghost btn-sm" style="color:var(--blue);border-color:#b0c8e8" onclick="openMailModal('${prop.id}','${a.id}')" title="Mail">&#9993;</button>
-      <button class="btn btn-ghost btn-sm" style="color:var(--danger);border-color:#f5c4b0" onclick="askDel('${prop.id}','${a.id}','${a.numero}','${esc(a.locataire)}','${fFR(a.period_start)}','${fFR(a.period_end)}')" title="Supprimer">&#10005;</button>
-    </div>
-  </div>`).join('')}`;
+  el.innerHTML=`<div class="sec-hdr"><div class="sec-title">Archives</div><span style="font-size:.82rem;color:var(--ink-3)">${arcs.length} quittance${arcs.length!==1?'s':''}</span></div>${arcs.length===0?`<div class="empty-state" style="padding:3rem 1rem"><div class="icon">??</div><h2>Aucune archive</h2><p>Les quittances générées apparaîtront ici.</p></div>`:arcs.map(a=>`<div class="arc-item"><div class="arc-badge">N° ${a.numero}</div><div class="arc-info"><div class="arc-tenant">${esc(a.locataire)}</div><div class="arc-period">${fFR(a.period_start)} → ${fFR(a.period_end)} <span style="color:var(--ink-4)">&middot; ${fFR(a.date_generation)}</span></div></div><div class="arc-amount">${fmt(a.total)} €</div><div class="arc-actions"><button class="btn btn-ghost btn-sm" onclick="rePDF('${prop.id}','${a.id}')">&#8595;</button><button class="btn btn-ghost btn-sm" style="color:var(--blue);border-color:#b0c8e8" onclick="openMailModal('${prop.id}','${a.id}')">&#9993;</button><button class="btn btn-ghost btn-sm" style="color:var(--danger);border-color:#f5c4b0" onclick="askDel('${prop.id}','${a.id}','${a.numero}','${esc(a.locataire)}','${fFR(a.period_start)}','${fFR(a.period_end)}')">&#10005;</button></div></div>`).join('')}`;
 }
 
-function askDel(pid,aid,num,loc,s,e){delProp=pid;delArc=aid;document.getElementById('del-info').innerHTML=`Quittance <strong>n&#176; ${num}</strong> &#8212; ${esc(loc)}<br>P&#233;riode : ${s} &#8594; ${e}`;openModal('modal-del');}
-async function doDeleteArchive(){
-  const prop=state.properties.find(p=>p.id===delProp);if(!prop){closeModal('modal-del');return;}
-  prop.archives=prop.archives.filter(a=>a.id!==delArc);prop.archives.sort((a,b)=>a.period_start.localeCompare(b.period_start));
+function askDel(pid,aid,num,loc,s,e) { delProp=pid;delArc=aid; document.getElementById('del-info').innerHTML=`Quittance <strong>n° ${num}</strong> — ${esc(loc)}<br>Période : ${s} → ${e}`; openModal('modal-del'); }
+async function doDeleteArchive() {
+  const prop=state.properties.find(p=>p.id===delProp); if(!prop){closeModal('modal-del');return;}
+  prop.archives=prop.archives.filter(a=>a.id!==delArc); prop.archives.sort((a,b)=>a.period_start.localeCompare(b.period_start));
   prop.archives.forEach((a,i)=>{a.num_int=i+1;a.numero=p2(i+1);});
-  await save();closeModal('modal-del');render();toast('Quittance supprim\u00e9e \u00b7 num\u00e9ros recalcul\u00e9s \u2713');
+  await save(); closeModal('modal-del'); render(); toast('Quittance supprimée · numéros recalculés ✓');
 }
-function rePDF(pid,aid){const prop=state.properties.find(p=>p.id===pid);if(!prop)return;const arc=prop.archives.find(a=>a.id===aid);if(!arc)return;buildPDF(prop,arc);toast('PDF ret\u00e9l\u00e9charg\u00e9 \u2713');}
+function rePDF(pid,aid) { const prop=state.properties.find(p=>p.id===pid); if(!prop)return; const arc=prop.archives.find(a=>a.id===aid); if(!arc)return; buildPDF(prop,arc); toast('PDF retéléchargé ✓'); }
 
-// FIX mail body: stop after proprietaire_nom, no footnote
-function buildMailBody(prop,arc){
+function buildMailBody(prop,arc) {
   const civ=arc.civilite||prop.locataire_civilite||'M.';
-  return `Bonjour ${civ} ${prop.locataire_nom},\n\nVeuillez trouver ci-joint votre quittance de loyer n\u00b0 ${arc.numero} pour la p\u00e9riode du ${fFRlong(arc.period_start)} au ${fFRlong(arc.period_end)}, d'un montant de ${fmt(arc.total)} \u20ac.\n\nN'h\u00e9sitez pas \u00e0 me contacter si vous avez la moindre question.\n\nCordialement,\n${prop.proprietaire_nom||''}`;
+  return 'Bonjour '+civ+' '+prop.locataire_nom+',\n\nVeuillez trouver ci-joint votre quittance de loyer n° '+arc.numero+' pour la période du '+fFRlong(arc.period_start)+' au '+fFRlong(arc.period_end)+', d\'un montant de '+fmt(arc.total)+' €.\n\nN\'hésitez pas à me contacter si vous avez la moindre question.\n\nCordialement,\n'+(prop.proprietaire_nom||'');
 }
-function openMailModal(propId,arcId){
-  const prop=state.properties.find(p=>p.id===propId);if(!prop)return;
-  const arc=prop.archives.find(a=>a.id===arcId);if(!arc)return;
-  if(!prop.locataire_email){toast("\u26a0 Ajoutez l'email du locataire dans les param\u00e8tres");return;}
-  const subject='Quittance de loyer n\u00b0 '+arc.numero;
-  const body=buildMailBody(prop,arc);
-  pendingMailto=`mailto:${encodeURIComponent(prop.locataire_email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  const filename=`quittance_${sanitize(prop.name)}_${arc.period_start}_n${arc.numero}.pdf`;
-  document.getElementById('mail-modal-subtitle').textContent=`Quittance n\u00b0 ${arc.numero} \u00b7 ${arc.locataire}`;
-  document.getElementById('mail-preview-block').innerHTML=`
-    <div class="mail-field"><strong>\u00c0 :</strong><span>${esc(prop.locataire_email)}</span></div>
-    <div class="mail-field"><strong>Objet :</strong><span>${esc(subject)}</span></div>
-    <div class="mail-body">${esc(body)}</div>
-    <div class="mail-attach">&#128206; ${esc(filename)} <span style="color:var(--ink-3);font-size:.73rem">(\u00e0 attacher manuellement)</span></div>`;
+function openMailModal(propId,arcId) {
+  const prop=state.properties.find(p=>p.id===propId); if(!prop)return;
+  const arc=prop.archives.find(a=>a.id===arcId); if(!arc)return;
+  if(!prop.locataire_email){toast('⚠ Ajoutez l\'email du locataire dans les paramètres');return;}
+  const subject='Quittance de loyer n° '+arc.numero, body=buildMailBody(prop,arc);
+  pendingMailto='mailto:'+encodeURIComponent(prop.locataire_email)+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  const filename='quittance_'+sanitize(prop.name)+'_'+arc.period_start+'_n'+arc.numero+'.pdf';
+  document.getElementById('mail-modal-subtitle').textContent='Quittance n° '+arc.numero+' · '+arc.locataire;
+  document.getElementById('mail-preview-block').innerHTML='<div class="mail-field"><strong>À&nbsp;:</strong><span>'+esc(prop.locataire_email)+'</span></div><div class="mail-field"><strong>Objet&nbsp;:</strong><span>'+esc(subject)+'</span></div><div class="mail-body">'+esc(body)+'</div><div class="mail-attach">?? '+esc(filename)+' <span style="color:var(--ink-3);font-size:.73rem">(à attacher manuellement)</span></div>';
   document.getElementById('modal-mail').style.display='flex';
 }
-function doOpenMail(){if(pendingMailto)window.location.href=pendingMailto;closeModal('modal-mail');toast('App Mail ouverte \u2713');}
+function doOpenMail() { if(pendingMailto)window.location.href=pendingMailto; closeModal('modal-mail'); toast('App Mail ouverte ✓'); }
 
-function openModal(id){document.getElementById(id).style.display='flex';}
-function closeModal(id){document.getElementById(id).style.display='none';if(id==='modal-add')document.getElementById('new-name').value='';if(id==='modal-del'){delProp=null;delArc=null;}if(id==='modal-mail')pendingMailto='';}
-['modal-add','modal-del','modal-mail'].forEach(id=>{document.getElementById(id).addEventListener('click',e=>{if(e.target.id===id)closeModal(id);});});
-document.getElementById('new-name').addEventListener('keydown',e=>{if(e.key==='Enter')doAddProp();});
-async function doAddProp(){
-  const name=document.getElementById('new-name').value.trim();if(!name){toast('\u26a0 Saisissez un nom');return;}
-  closeModal('modal-add');const prop=newProp(name);state.properties.push(prop);state.activePropertyId=prop.id;
-  screen='property';tab='generer';await save();render();toast(`"${name}" cr\u00e9\u00e9 \u2713`);
+function openModal(id) { document.getElementById(id).style.display='flex'; }
+function closeModal(id) { document.getElementById(id).style.display='none'; if(id==='modal-add')document.getElementById('new-name').value=''; if(id==='modal-del'){delProp=null;delArc=null;} if(id==='modal-mail')pendingMailto=''; }
+['modal-add','modal-del','modal-mail'].forEach(id=>{ document.getElementById(id).addEventListener('click',e=>{ if(e.target.id===id)closeModal(id); }); });
+document.getElementById('new-name').addEventListener('keydown',e=>{ if(e.key==='Enter')doAddProp(); });
+async function doAddProp() {
+  const name=document.getElementById('new-name').value.trim(); if(!name){toast('⚠ Saisissez un nom');return;}
+  closeModal('modal-add'); const prop=newProp(name); state.properties.push(prop); state.activePropertyId=prop.id;
+  screen='property'; tab='generer'; await save(); render(); toast('"'+name+'" créé ✓');
 }
 </script>
 </body>
